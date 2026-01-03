@@ -10,6 +10,7 @@ export function useBreathing() {
   const [relatedReminders, setRelatedReminders] = useState<BreathReminder[]>([]);
   const [showRelated, setShowRelated] = useState(false);
   const [stayDuration, setStayDuration] = useState(0);
+  const [isFading, setIsFading] = useState(false);
 
   // 选择主咒语（随机 + 时间权重）
   const selectMainReminder = () => {
@@ -24,6 +25,7 @@ export function useBreathing() {
     setRelatedReminders([]);
     setShowRelated(false);
     setStayDuration(0);
+    setIsFading(false);
   };
 
   // 加载相关内容
@@ -68,7 +70,13 @@ export function useBreathing() {
   }, [currentReminder, relatedReminders.length]);
 
   const nextReminder = () => {
-    selectMainReminder();
+    // 先淡出
+    setIsFading(true);
+
+    // 600ms 后切换内容并淡入
+    setTimeout(() => {
+      selectMainReminder();
+    }, 600);
   };
 
   return {
@@ -76,6 +84,7 @@ export function useBreathing() {
     relatedReminders,
     showRelated,
     stayDuration,
+    isFading,
     nextReminder,
   };
 }

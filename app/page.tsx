@@ -7,12 +7,21 @@ import { useBreathing } from '@/hooks/useBreathing';
 import { useConfig } from '@/hooks/useConfig';
 
 export default function Home() {
-  const { currentReminder, relatedReminders, showRelated, nextReminder } = useBreathing();
+  const { currentReminder, relatedReminders, showRelated, isFading, nextReminder } = useBreathing();
   const { config, setTheme, setLanguage, setBreathSpeed } = useConfig();
 
   const [isPaused, setIsPaused] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [longPressTimer, setLongPressTimer] = useState<NodeJS.Timeout | null>(null);
+
+  // 获取背景色
+  const getBackgroundColor = () => {
+    if (currentReminder?.visual?.backgroundColor) {
+      return currentReminder.visual.backgroundColor;
+    }
+    // 默认背景色根据主题
+    return config.theme === 'light' ? '#f5f5f0' : '#1a1a1a';
+  };
 
   // 主题类名
   const themeClass = `theme-${config.theme}`;
@@ -90,12 +99,14 @@ export default function Home() {
       className={`
         min-h-screen
         flex flex-col items-center justify-center
-        ${themeClass}
-        smooth-transition
         cursor-pointer
         relative
         overflow-hidden
+        transition-colors duration-1000 ease-in-out
       `}
+      style={{
+        backgroundColor: getBackgroundColor(),
+      }}
       onClick={handleClick}
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
@@ -103,7 +114,11 @@ export default function Home() {
       onTouchEnd={handleTouchEnd}
     >
       {/* 主咒语 */}
-      <div className="flex items-center justify-center mb-8">
+      <div className={`
+        flex items-center justify-center mb-8
+        transition-opacity duration-600 ease-in-out
+        ${isFading ? 'opacity-0' : 'opacity-100'}
+      `}>
         <BreathingText
           reminder={currentReminder}
           language={config.language}
@@ -114,8 +129,12 @@ export default function Home() {
       </div>
 
       {/* 相关内容 - 渐进显示 */}
-      {showRelated && (
-        <div className="absolute inset-0 pointer-events-none">
+      {showRelated && !isFading && (
+        <div className={`
+          absolute inset-0 pointer-events-none
+          transition-opacity duration-600 ease-in-out
+          ${isFading ? 'opacity-0' : 'opacity-100'}
+        `}>
           {relatedReminders.map((reminder, index) => {
             // 计算位置（分散在四周）
             const positions = [

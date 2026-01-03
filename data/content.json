@@ -11,7 +11,8 @@
       "visual": {
         "gradient": "from-purple-400/80 via-pink-300/70 to-rose-400/80",
         "glow": "purple",
-        "size": "large"
+        "size": "large",
+        "backgroundColor": "#1a0f1f"
       }
     },
     {
@@ -25,7 +26,8 @@
       "visual": {
         "gradient": "from-cyan-400/80 via-blue-300/70 to-indigo-400/80",
         "glow": "cyan",
-        "size": "medium"
+        "size": "medium",
+        "backgroundColor": "#0f1824"
       }
     },
     {
@@ -39,7 +41,8 @@
       "visual": {
         "gradient": "from-emerald-400/80 via-teal-300/70 to-green-400/80",
         "glow": "emerald",
-        "size": "small"
+        "size": "small",
+        "backgroundColor": "#0f1f17"
       }
     },
     {
@@ -53,7 +56,8 @@
       "visual": {
         "gradient": "from-amber-400/80 via-yellow-300/70 to-orange-400/80",
         "glow": "amber",
-        "size": "medium"
+        "size": "medium",
+        "backgroundColor": "#1f1a0f"
       }
     },
     {
@@ -67,7 +71,8 @@
       "visual": {
         "gradient": "from-blue-400/80 via-sky-300/70 to-cyan-400/80",
         "glow": "blue",
-        "size": "large"
+        "size": "large",
+        "backgroundColor": "#0f1820"
       }
     },
     {
@@ -81,7 +86,8 @@
       "visual": {
         "gradient": "from-fuchsia-400/80 via-violet-300/70 to-purple-400/80",
         "glow": "fuchsia",
-        "size": "large"
+        "size": "large",
+        "backgroundColor": "#1a0f24"
       }
     },
     {

@@ -2,6 +2,7 @@ export interface VisualStyle {
   gradient?: string;
   glow?: string;
   size?: 'small' | 'medium' | 'large';
+  backgroundColor?: string;
 }
 
 export interface BreathReminder {
