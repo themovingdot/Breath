@@ -3,17 +3,17 @@
     {
       "id": "core_01",
       "category": "core_mantra",
-      "text_cn": "不认同",
-      "text_en": "Non-identification",
-      "related": ["core_02", "principle_01", "scene_parent_01"],
+      "text_cn": "虽不同但平等",
+      "text_en": "Different Yet Equal",
+      "related": ["core_02", "core_06", "principle_01"],
       "context": "当我发现自己与情绪、想法、角色认同时",
-      "elaboration": "观察它，但不成为它。我是容器,不是内容。"
+      "elaboration": "我与这些体验不同,但它们都值得被看见。观察,不评判。"
     },
     {
       "id": "core_02",
       "category": "core_mantra",
-      "text_cn": "保持距离",
-      "text_en": "Keep Distance",
+      "text_cn": "和自己保持距离",
+      "text_en": "Keep Distance from Myself",
       "related": ["core_01", "principle_02", "scene_parent_02"],
       "context": "当我感到被情绪、想法、情境淹没时",
       "elaboration": "创造空间。观察者与被观察之间,永远有距离。"
@@ -21,8 +21,8 @@
     {
       "id": "core_03",
       "category": "core_mantra",
-      "text_cn": "刚刚好",
-      "text_en": "Just Right",
+      "text_cn": "一切刚刚好",
+      "text_en": "Everything Is Just Right",
       "related": ["core_04", "principle_01"],
       "context": "当我想要控制、完美、更多时",
       "elaboration": "此刻已经完整。不多不少,刚刚好。"
@@ -30,20 +30,29 @@
     {
       "id": "core_04",
       "category": "core_mantra",
-      "text_cn": "谢谢我",
-      "text_en": "Thank You, Me",
-      "related": ["core_03", "core_05"],
+      "text_cn": "谢谢我自己",
+      "text_en": "Thank You, Myself",
+      "related": ["core_03", "core_05", "core_06"],
       "context": "当我批判、否定、苛责自己时",
       "elaboration": "我已经尽力。我值得被温柔对待。"
     },
     {
       "id": "core_05",
       "category": "core_mantra",
-      "text_cn": "随之来,随之去",
+      "text_cn": "随之来随之去，来则来去则去",
       "text_en": "Let It Come, Let It Go",
       "related": ["core_01", "principle_03"],
       "context": "当我抓取愉悦、抗拒痛苦时",
       "elaboration": "一切都在流动。我只是见证。"
+    },
+    {
+      "id": "core_06",
+      "category": "core_mantra",
+      "text_cn": "成为自己，成全他人",
+      "text_en": "Be Myself, Fulfill Others",
+      "related": ["core_01", "core_04", "principle_02"],
+      "context": "当我在自我与他人之间挣扎时",
+      "elaboration": "我的完整不需要牺牲他人。他人的成长不需要我的消失。"
     },
     {
       "id": "principle_01",
