@@ -1,8 +1,9 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import BreathingText from '@/components/BreathingText';
 import ConfigMenu from '@/components/ConfigMenu';
+import MantraDetail from '@/components/MantraDetail';
 import { useBreathing } from '@/hooks/useBreathing';
 import { useConfig } from '@/hooks/useConfig';
 
@@ -12,7 +13,10 @@ export default function Home() {
 
   const [isPaused, setIsPaused] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const [showDetail, setShowDetail] = useState(false);
   const [longPressTimer, setLongPressTimer] = useState<NodeJS.Timeout | null>(null);
+  const touchStartY = useRef(0);
+  const scrollThreshold = 50; // 滚动阈值
 
   // 获取背景色
   const getBackgroundColor = () => {
@@ -72,17 +76,46 @@ export default function Home() {
   }, [nextReminder]);
 
   // 触摸事件处理（移动端）
-  const handleTouchStart = () => {
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartY.current = e.touches[0].clientY;
+
     const timer = setTimeout(() => {
       setIsPaused(true);
     }, 800);
     setLongPressTimer(timer);
   };
 
-  const handleTouchEnd = () => {
+  const handleTouchEnd = (e: React.TouchEvent) => {
     if (longPressTimer) {
       clearTimeout(longPressTimer);
       setLongPressTimer(null);
+    }
+
+    // 检测滑动方向
+    const touchEndY = e.changedTouches[0].clientY;
+    const deltaY = touchStartY.current - touchEndY;
+
+    if (Math.abs(deltaY) > scrollThreshold) {
+      if (deltaY > 0 && !showDetail) {
+        // 向上滑动，显示详情
+        setShowDetail(true);
+      } else if (deltaY < 0 && showDetail) {
+        // 向下滑动，关闭详情
+        setShowDetail(false);
+      }
+    }
+  };
+
+  // 鼠标滚轮事件处理（桌面端）
+  const handleWheel = (e: React.WheelEvent) => {
+    if (Math.abs(e.deltaY) > scrollThreshold) {
+      if (e.deltaY < 0 && !showDetail) {
+        // 向上滚动，显示详情
+        setShowDetail(true);
+      } else if (e.deltaY > 0 && showDetail) {
+        // 向下滚动，关闭详情
+        setShowDetail(false);
+      }
     }
   };
 
@@ -112,6 +145,7 @@ export default function Home() {
       onMouseUp={handleMouseUp}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
+      onWheel={handleWheel}
     >
       {/* 主咒语 */}
       <div className={`
@@ -175,7 +209,7 @@ export default function Home() {
 
       {/* 提示：点击切换 */}
       <div className="fixed bottom-3 right-3 text-[10px] opacity-15 pointer-events-none">
-        点击切换 · 长按暂停 · ⌘M 设置
+        {showDetail ? '向下滑动返回' : '向上滑动查看详情 · 点击切换 · 长按暂停 · ⌘M 设置'}
       </div>
 
       {/* 配置菜单 */}
@@ -188,6 +222,14 @@ export default function Home() {
           onClose={() => setShowMenu(false)}
         />
       )}
+
+      {/* 咒语详情 */}
+      <MantraDetail
+        reminder={currentReminder}
+        language={config.language}
+        isVisible={showDetail}
+        onClose={() => setShowDetail(false)}
+      />
     </main>
   );
 }
