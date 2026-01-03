@@ -7,7 +7,12 @@
       "text_en": "Different Yet Equal",
       "related": ["core_02", "core_06", "principle_01"],
       "context": "当我发现自己与情绪、想法、角色认同时",
-      "elaboration": "我与这些体验不同,但它们都值得被看见。观察,不评判。"
+      "elaboration": "我与这些体验不同,但它们都值得被看见。观察,不评判。",
+      "visual": {
+        "gradient": "from-purple-400/80 via-pink-300/70 to-rose-400/80",
+        "glow": "purple",
+        "size": "large"
+      }
     },
     {
       "id": "core_02",
@@ -16,7 +21,12 @@
       "text_en": "Keep Distance from Myself",
       "related": ["core_01", "principle_02", "scene_parent_02"],
       "context": "当我感到被情绪、想法、情境淹没时",
-      "elaboration": "创造空间。观察者与被观察之间,永远有距离。"
+      "elaboration": "创造空间。观察者与被观察之间,永远有距离。",
+      "visual": {
+        "gradient": "from-cyan-400/80 via-blue-300/70 to-indigo-400/80",
+        "glow": "cyan",
+        "size": "medium"
+      }
     },
     {
       "id": "core_03",
@@ -25,7 +35,12 @@
       "text_en": "Everything Is Just Right",
       "related": ["core_04", "principle_01"],
       "context": "当我想要控制、完美、更多时",
-      "elaboration": "此刻已经完整。不多不少,刚刚好。"
+      "elaboration": "此刻已经完整。不多不少,刚刚好。",
+      "visual": {
+        "gradient": "from-emerald-400/80 via-teal-300/70 to-green-400/80",
+        "glow": "emerald",
+        "size": "small"
+      }
     },
     {
       "id": "core_04",
@@ -34,7 +49,12 @@
       "text_en": "Thank You, Myself",
       "related": ["core_03", "core_05", "core_06"],
       "context": "当我批判、否定、苛责自己时",
-      "elaboration": "我已经尽力。我值得被温柔对待。"
+      "elaboration": "我已经尽力。我值得被温柔对待。",
+      "visual": {
+        "gradient": "from-amber-400/80 via-yellow-300/70 to-orange-400/80",
+        "glow": "amber",
+        "size": "medium"
+      }
     },
     {
       "id": "core_05",
@@ -43,7 +63,12 @@
       "text_en": "Let It Come, Let It Go",
       "related": ["core_01", "principle_03"],
       "context": "当我抓取愉悦、抗拒痛苦时",
-      "elaboration": "一切都在流动。我只是见证。"
+      "elaboration": "一切都在流动。我只是见证。",
+      "visual": {
+        "gradient": "from-blue-400/80 via-sky-300/70 to-cyan-400/80",
+        "glow": "blue",
+        "size": "large"
+      }
     },
     {
       "id": "core_06",
@@ -52,7 +77,12 @@
       "text_en": "Be Myself, Fulfill Others",
       "related": ["core_01", "core_04", "principle_02"],
       "context": "当我在自我与他人之间挣扎时",
-      "elaboration": "我的完整不需要牺牲他人。他人的成长不需要我的消失。"
+      "elaboration": "我的完整不需要牺牲他人。他人的成长不需要我的消失。",
+      "visual": {
+        "gradient": "from-fuchsia-400/80 via-violet-300/70 to-purple-400/80",
+        "glow": "fuchsia",
+        "size": "large"
+      }
     },
     {
       "id": "principle_01",

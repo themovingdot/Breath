@@ -149,13 +149,13 @@ export default function Home() {
 
       {/* 暂停提示 */}
       {isPaused && (
-        <div className="fixed bottom-8 left-1/2 -translate-x-1/2 text-sm opacity-30">
+        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 text-xs opacity-25">
           已暂停 · 点击恢复
         </div>
       )}
 
       {/* 提示：点击切换 */}
-      <div className="fixed bottom-4 right-4 text-xs opacity-20 pointer-events-none">
+      <div className="fixed bottom-3 right-3 text-[10px] opacity-15 pointer-events-none">
         点击切换 · 长按暂停 · ⌘M 设置
       </div>
 

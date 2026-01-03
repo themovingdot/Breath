@@ -1,3 +1,9 @@
+export interface VisualStyle {
+  gradient?: string;
+  glow?: string;
+  size?: 'small' | 'medium' | 'large';
+}
+
 export interface BreathReminder {
   id: string;
   category: 'core_mantra' | 'principle' | 'parenting' | 'theory' | 'daily';
@@ -6,6 +12,7 @@ export interface BreathReminder {
   related: string[];
   context: string;
   elaboration: string;
+  visual?: VisualStyle;
 }
 
 export interface ContentData {
