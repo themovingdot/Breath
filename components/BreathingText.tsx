@@ -45,25 +45,38 @@ export default function BreathingText({
   const sizeClass = getSizeClass();
   const opacityClass = isMain ? 'opacity-100' : 'opacity-35';
 
-  // 渐变色类名
-  const gradientClass = visual?.gradient
-    ? `bg-gradient-to-r ${visual.gradient} bg-clip-text text-transparent`
-    : '';
-
-  // 光晕效果
-  const getGlowClass = () => {
+  // 获取颜色（从渐变中提取或使用默认）
+  const getTextColor = () => {
     if (!isMain || !visual?.glow) return '';
 
-    const glowColors: Record<string, string> = {
-      purple: 'drop-shadow-[0_0_30px_rgba(168,85,247,0.4)]',
-      cyan: 'drop-shadow-[0_0_30px_rgba(34,211,238,0.4)]',
-      emerald: 'drop-shadow-[0_0_30px_rgba(16,185,129,0.4)]',
-      amber: 'drop-shadow-[0_0_30px_rgba(251,191,36,0.4)]',
-      blue: 'drop-shadow-[0_0_30px_rgba(59,130,246,0.4)]',
-      fuchsia: 'drop-shadow-[0_0_30px_rgba(232,121,249,0.4)]',
+    const colors: Record<string, string> = {
+      purple: 'text-purple-300',
+      cyan: 'text-cyan-300',
+      emerald: 'text-emerald-300',
+      amber: 'text-amber-300',
+      blue: 'text-blue-300',
+      fuchsia: 'text-fuchsia-300',
     };
 
-    return glowColors[visual.glow] || '';
+    return colors[visual.glow] || 'text-gray-200';
+  };
+
+  // 光晕效果
+  const getGlowStyle = () => {
+    if (!isMain || !visual?.glow) return {};
+
+    const glowColors: Record<string, string> = {
+      purple: '0 0 40px rgba(168,85,247,0.6), 0 0 80px rgba(168,85,247,0.3)',
+      cyan: '0 0 40px rgba(34,211,238,0.6), 0 0 80px rgba(34,211,238,0.3)',
+      emerald: '0 0 40px rgba(16,185,129,0.6), 0 0 80px rgba(16,185,129,0.3)',
+      amber: '0 0 40px rgba(251,191,36,0.6), 0 0 80px rgba(251,191,36,0.3)',
+      blue: '0 0 40px rgba(59,130,246,0.6), 0 0 80px rgba(59,130,246,0.3)',
+      fuchsia: '0 0 40px rgba(232,121,249,0.6), 0 0 80px rgba(232,121,249,0.3)',
+    };
+
+    return {
+      textShadow: glowColors[visual.glow] || 'none',
+    };
   };
 
   return (
@@ -72,8 +85,7 @@ export default function BreathingText({
         ${breathClass}
         ${sizeClass}
         ${opacityClass}
-        ${gradientClass}
-        ${getGlowClass()}
+        ${getTextColor()}
         ${isPaused ? 'paused' : ''}
         smooth-transition
         no-select
@@ -81,9 +93,7 @@ export default function BreathingText({
         tracking-wide
         font-light
       `}
-      style={{
-        textShadow: isMain ? '0 2px 40px rgba(0, 0, 0, 0.1)' : 'none',
-      }}
+      style={getGlowStyle()}
     >
       {text}
     </div>

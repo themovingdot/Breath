@@ -1,9 +1,18 @@
 import { useState, useEffect } from 'react';
 import { AppConfig, Theme, Language, BreathSpeed } from '@/types';
 
+// 检测系统语言
+const detectSystemLanguage = (): Language => {
+  if (typeof window === 'undefined') return 'cn';
+
+  const browserLang = navigator.language.toLowerCase();
+  // 如果是中文（zh, zh-CN, zh-TW等），返回cn，否则返回en
+  return browserLang.startsWith('zh') ? 'cn' : 'en';
+};
+
 const DEFAULT_CONFIG: AppConfig = {
   theme: 'dark',
-  language: 'cn',
+  language: detectSystemLanguage(),
   breathSpeed: 'medium',
 };
 
@@ -23,6 +32,10 @@ export function useConfig() {
       } catch (e) {
         console.error('Failed to load config:', e);
       }
+    } else {
+      // 首次访问，使用系统语言
+      const detectedLang = detectSystemLanguage();
+      setConfig(prev => ({ ...prev, language: detectedLang }));
     }
   }, []);
 
