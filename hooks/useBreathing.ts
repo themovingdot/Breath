@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
-import { BreathReminder } from '@/types';
-import contentData from '@/data/content.json';
+import { BreathReminder, ContentData } from '@/types';
+import contentDataRaw from '@/data/content.json';
+
+// Type assertion for JSON import
+const contentData = contentDataRaw as ContentData;
 
 export function useBreathing() {
   const [currentReminder, setCurrentReminder] = useState<BreathReminder | null>(null);
@@ -10,7 +13,7 @@ export function useBreathing() {
 
   // 选择主咒语（随机 + 时间权重）
   const selectMainReminder = () => {
-    const reminders = contentData.breath_reminders;
+    const reminders = contentData.breath_reminders as BreathReminder[];
     const coreReminders = reminders.filter(r => r.category === 'core_mantra');
 
     // 简单随机选择（未来可加入时间权重）
@@ -25,7 +28,7 @@ export function useBreathing() {
 
   // 加载相关内容
   const loadRelatedContent = (mainReminder: BreathReminder) => {
-    const allReminders = contentData.breath_reminders;
+    const allReminders = contentData.breath_reminders as BreathReminder[];
     const related = mainReminder.related
       .map(id => allReminders.find(r => r.id === id))
       .filter(Boolean)
