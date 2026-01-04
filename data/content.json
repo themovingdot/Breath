@@ -692,6 +692,345 @@
       }
     },
     {
+      "id": "core_08",
+      "category": "core_mantra",
+      "text_cn": "没有应该，只有可能",
+      "text_en": "No Shoulds, Only Possibilities",
+      "related": ["core_03", "core_05", "principle_03"],
+      "context": {
+        "cn": "当用'应该'束缚自己或他人，或陷入道德评判时",
+        "en": "When binding yourself or others with 'shoulds', or trapped in moral judgments"
+      },
+      "elaboration": {
+        "cn": "Replace 'should' with 'could'. 从命令到选择，从压力到可能性。",
+        "en": "Replace 'should' with 'could'. From command to choice, from pressure to possibility."
+      },
+      "coreUnderstanding": {
+        "cn": "'应该'是外在规则的内化，'可能'是自由意志的展开。一个制造压力，一个开启空间。",
+        "en": "'Should' is internalized external rules, 'could' is the unfolding of free will. One creates pressure, the other opens space."
+      },
+      "scenes": [
+        {
+          "title": {
+            "cn": "自我要求",
+            "en": "Self-Demands"
+          },
+          "description": {
+            "cn": "'我应该更努力'→'我可以选择努力' / '我应该做个好父母'→'我可以探索什么对威威有益'",
+            "en": "'I should work harder'→'I could choose to work harder' / 'I should be a good parent'→'I could explore what benefits Weiwei'"
+          }
+        },
+        {
+          "title": {
+            "cn": "对他人期待",
+            "en": "Expectations of Others"
+          },
+          "description": {
+            "cn": "'威威应该听话'→'威威可能有他自己的节奏' / '父母应该理解我'→'父母可能以他们的方式爱着'",
+            "en": "'Weiwei should obey'→'Weiwei could have his own rhythm' / 'Parents should understand me'→'Parents could be loving in their own way'"
+          }
+        },
+        {
+          "title": {
+            "cn": "道德评判",
+            "en": "Moral Judgment"
+          },
+          "description": {
+            "cn": "当你发现自己在用'应该/不应该'评判自己或他人的选择时",
+            "en": "When you find yourself judging your own or others' choices with 'should/shouldn't'"
+          }
+        },
+        {
+          "title": {
+            "cn": "生活方式",
+            "en": "Lifestyle Choices"
+          },
+          "description": {
+            "cn": "'人生应该有意义'→'生活可以有无数种活法' / '我应该更成功'→'我可以定义自己的成功'",
+            "en": "'Life should be meaningful'→'Life could be lived in countless ways' / 'I should be more successful'→'I could define my own success'"
+          }
+        }
+      ],
+      "practices": [
+        {
+          "step": {
+            "cn": "捕捉'应该'",
+            "en": "Catch 'Shoulds'"
+          },
+          "description": {
+            "cn": "注意到自己什么时候在使用'应该'这个词（对自己或对他人）",
+            "en": "Notice when you're using the word 'should' (toward yourself or others)"
+          }
+        },
+        {
+          "step": {
+            "cn": "语言替换",
+            "en": "Language Replacement"
+          },
+          "description": {
+            "cn": "把'应该'替换成'可以/可能'，感受压力到可能性的转变",
+            "en": "Replace 'should' with 'could/might', feel the shift from pressure to possibility"
+          }
+        },
+        {
+          "step": {
+            "cn": "探索动机",
+            "en": "Explore Motivation"
+          },
+          "description": {
+            "cn": "问自己：这个'应该'来自哪里？真的是我的选择吗？",
+            "en": "Ask yourself: Where does this 'should' come from? Is it truly my choice?"
+          }
+        },
+        {
+          "step": {
+            "cn": "拥抱选择",
+            "en": "Embrace Choice"
+          },
+          "description": {
+            "cn": "从'我必须'到'我选择'——同样的行为，完全不同的内在体验",
+            "en": "From 'I must' to 'I choose'—same action, completely different internal experience"
+          }
+        }
+      ],
+      "keyInsight": {
+        "cn": "'应该'是恐惧的语言，'可能'是自由的语言。当你停止应该自己，你就开始成为自己。",
+        "en": "'Should' is the language of fear, 'could' is the language of freedom. When you stop 'should-ing' yourself, you start becoming yourself."
+      },
+      "visual": {
+        "gradient": "from-sky-400/80 via-indigo-300/70 to-violet-400/80",
+        "glow": "blue",
+        "size": "medium",
+        "backgroundColor": "#0f1420"
+      }
+    },
+    {
+      "id": "core_09",
+      "category": "core_mantra",
+      "text_cn": "享受当下是我最大的努力",
+      "text_en": "Enjoying This Moment Is My Greatest Effort",
+      "related": ["core_06", "core_05", "principle_03"],
+      "context": {
+        "cn": "当陷入'努力paradox'——越努力越焦虑，或认为享受=不努力时",
+        "en": "When trapped in the 'effort paradox'—the harder you try the more anxious, or believing enjoyment = not trying"
+      },
+      "elaboration": {
+        "cn": "最深刻的努力不是对抗当下，而是完全在场于当下。",
+        "en": "The deepest effort is not fighting the present moment, but being fully present in it."
+      },
+      "coreUnderstanding": {
+        "cn": "真正的努力不是'做更多'，而是'更在'。享受不是放弃，而是最高形式的专注。",
+        "en": "True effort is not 'doing more', but 'being more'. Enjoyment is not giving up, but the highest form of focus."
+      },
+      "scenes": [
+        {
+          "title": {
+            "cn": "育儿焦虑",
+            "en": "Parenting Anxiety"
+          },
+          "description": {
+            "cn": "不是'我要努力让威威开心'，而是'我享受和威威在一起的这个时刻'",
+            "en": "Not 'I must try to make Weiwei happy', but 'I enjoy this moment of being with Weiwei'"
+          }
+        },
+        {
+          "title": {
+            "cn": "工作压力",
+            "en": "Work Pressure"
+          },
+          "description": {
+            "cn": "从'我必须更努力工作'到'我享受投入这件事的过程'",
+            "en": "From 'I must work harder' to 'I enjoy the process of engaging with this'"
+          }
+        },
+        {
+          "title": {
+            "cn": "自我成长",
+            "en": "Self-Growth"
+          },
+          "description": {
+            "cn": "'我要努力成为更好的人'vs'我享受当下这个不完美的自己'",
+            "en": "'I must try to become a better person' vs 'I enjoy this imperfect self right now'"
+          }
+        },
+        {
+          "title": {
+            "cn": "平凡时刻",
+            "en": "Ordinary Moments"
+          },
+          "description": {
+            "cn": "吃饭、走路、呼吸——当你完全enjoy这些，它们就是你最大的努力",
+            "en": "Eating, walking, breathing—when you fully enjoy these, they become your greatest effort"
+          }
+        }
+      ],
+      "practices": [
+        {
+          "step": {
+            "cn": "识别紧绷",
+            "en": "Recognize Tension"
+          },
+          "description": {
+            "cn": "注意到'努力'带来的身体紧张和心理压力",
+            "en": "Notice the physical tension and mental pressure that 'effort' brings"
+          }
+        },
+        {
+          "step": {
+            "cn": "重新定义努力",
+            "en": "Redefine Effort"
+          },
+          "description": {
+            "cn": "问自己：如果享受当下就是努力，会是什么样子？",
+            "en": "Ask yourself: What would it look like if enjoying this moment is the effort?"
+          }
+        },
+        {
+          "step": {
+            "cn": "放松投入",
+            "en": "Relaxed Engagement"
+          },
+          "description": {
+            "cn": "在放松中全然投入——这才是真正的专注",
+            "en": "Full engagement in relaxation—this is true focus"
+          }
+        },
+        {
+          "step": {
+            "cn": "庆祝当下",
+            "en": "Celebrate Now"
+          },
+          "description": {
+            "cn": "不是为了未来而努力，而是为了此刻而在",
+            "en": "Not striving for the future, but being present for this moment"
+          }
+        }
+      ],
+      "keyInsight": {
+        "cn": "Paradox：当你停止'努力享受'而只是享受时，那就是最大的努力。努力的终点，是不再需要努力。",
+        "en": "Paradox: When you stop 'trying to enjoy' and just enjoy, that is the greatest effort. The end of effort is not needing to effort."
+      },
+      "visual": {
+        "gradient": "from-pink-400/80 via-rose-300/70 to-red-400/80",
+        "glow": "fuchsia",
+        "size": "large",
+        "backgroundColor": "#1f0f1a"
+      }
+    },
+    {
+      "id": "core_10",
+      "category": "core_mantra",
+      "text_cn": "没有人能在成为你自己的游戏里打败你",
+      "text_en": "No One Can Beat You at Being Yourself",
+      "related": ["core_03", "core_04", "core_07"],
+      "context": {
+        "cn": "当比较、竞争、不够好的感觉升起时",
+        "en": "When comparison, competition, feelings of inadequacy arise"
+      },
+      "elaboration": {
+        "cn": "在所有其他游戏里你都可能输，但在成为你自己这件事上，你永远是唯一的玩家。",
+        "en": "In all other games you might lose, but in being yourself, you are always the only player."
+      },
+      "coreUnderstanding": {
+        "cn": "不是'我要比别人更好'，而是'没有人能比我更我'。这不是竞争，而是存在的独一无二性。",
+        "en": "Not 'I must be better than others', but 'no one can be more me than me'. This isn't competition, but the uniqueness of existence."
+      },
+      "scenes": [
+        {
+          "title": {
+            "cn": "职场竞争",
+            "en": "Career Competition"
+          },
+          "description": {
+            "cn": "他们可能在专业技能上超越你，但没人能在'成为你'这件事上赢你",
+            "en": "They might surpass you in professional skills, but no one can win at 'being you'"
+          }
+        },
+        {
+          "title": {
+            "cn": "育儿比较",
+            "en": "Parenting Comparison"
+          },
+          "description": {
+            "cn": "其他父母可能有不同方法，但没人能在'成为威威的父母'这个位置上替代你",
+            "en": "Other parents might have different methods, but no one can replace you in 'being Weiwei's parent'"
+          }
+        },
+        {
+          "title": {
+            "cn": "社交媒体",
+            "en": "Social Media"
+          },
+          "description": {
+            "cn": "看到他人的精彩生活时，记住：没人能在过你的生活上赢你",
+            "en": "When seeing others' amazing lives, remember: no one can win at living your life"
+          }
+        },
+        {
+          "title": {
+            "cn": "内在批判",
+            "en": "Inner Criticism"
+          },
+          "description": {
+            "cn": "当内在声音说'你不够好'时，问：不够好to be谁？我只需要足够好to be我自己",
+            "en": "When inner voice says 'you're not good enough', ask: not good enough to be who? I only need to be good enough to be myself"
+          }
+        }
+      ],
+      "practices": [
+        {
+          "step": {
+            "cn": "识别游戏",
+            "en": "Identify the Game"
+          },
+          "description": {
+            "cn": "当你感到'输了'，问自己：我在玩什么游戏？这是我选择的游戏吗？",
+            "en": "When you feel 'defeated', ask: What game am I playing? Is this the game I chose?"
+          }
+        },
+        {
+          "step": {
+            "cn": "换游戏",
+            "en": "Change the Game"
+          },
+          "description": {
+            "cn": "从'我要赢过别人'切换到'我要完全成为我自己'",
+            "en": "Switch from 'I must win over others' to 'I will fully become myself'"
+          }
+        },
+        {
+          "step": {
+            "cn": "庆祝独特",
+            "en": "Celebrate Uniqueness"
+          },
+          "description": {
+            "cn": "你的怪异、缺陷、特质——这些让你在'成为你'这个游戏中不可战胜",
+            "en": "Your quirks, flaws, traits—these make you unbeatable in the game of 'being you'"
+          }
+        },
+        {
+          "step": {
+            "cn": "定义成功",
+            "en": "Define Success"
+          },
+          "description": {
+            "cn": "在你自己的游戏里，你定义what winning looks like",
+            "en": "In your own game, you define what winning looks like"
+          }
+        }
+      ],
+      "keyInsight": {
+        "cn": "你不需要战胜任何人，因为在最重要的游戏里——成为你自己——你没有对手。你是裁判、玩家、也是规则制定者。",
+        "en": "You don't need to beat anyone, because in the most important game—being yourself—you have no opponent. You are the referee, the player, and the rule-maker."
+      },
+      "visual": {
+        "gradient": "from-emerald-400/80 via-cyan-300/70 to-teal-400/80",
+        "glow": "emerald",
+        "size": "large",
+        "backgroundColor": "#0f1f1a"
+      }
+    },
+    {
       "id": "principle_01",
       "category": "principle",
       "text_cn": "清明地体验",
