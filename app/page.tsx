@@ -109,11 +109,11 @@ export default function Home() {
   // 鼠标滚轮事件处理（桌面端）
   const handleWheel = (e: React.WheelEvent) => {
     if (Math.abs(e.deltaY) > scrollThreshold) {
-      if (e.deltaY < 0 && !showDetail) {
-        // 向上滚动，显示详情
+      if (e.deltaY > 0 && !showDetail) {
+        // 向下滚动，显示详情
         setShowDetail(true);
-      } else if (e.deltaY > 0 && showDetail) {
-        // 向下滚动，关闭详情
+      } else if (e.deltaY < 0 && showDetail) {
+        // 向上滚动，关闭详情
         setShowDetail(false);
       }
     }
@@ -214,10 +214,10 @@ export default function Home() {
       {/* 提示：点击切换 */}
       <div className="fixed bottom-3 right-3 text-[10px] opacity-15 pointer-events-none">
         {showDetail
-          ? (config.language === 'cn' ? '向下滑动返回' : 'Swipe down to return')
+          ? (config.language === 'cn' ? '向上滚动返回' : 'Scroll up to return')
           : (config.language === 'cn'
-              ? '向上滑动查看详情 · 点击切换 · 长按暂停 · ⌘M 设置'
-              : 'Swipe up for details · Click to change · Hold to pause · ⌘M settings')}
+              ? '向下滚动查看详情 · 点击切换 · 长按暂停 · ⌘M 设置'
+              : 'Scroll down for details · Click to change · Hold to pause · ⌘M settings')}
       </div>
 
       {/* 配置菜单 */}
