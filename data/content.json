@@ -3,11 +3,41 @@
     {
       "id": "core_01",
       "category": "core_mantra",
-      "text_cn": "虽不同但平等",
-      "text_en": "Different Yet Equal",
-      "related": ["core_02", "core_06", "principle_01"],
-      "context": "当我发现自己与情绪、想法、角色认同时",
-      "elaboration": "我与这些体验不同,但它们都值得被看见。观察,不评判。",
+      "text_cn": "那都不是我",
+      "text_en": "None of That Is Me",
+      "related": ["core_02", "principle_01", "scene_parent_01"],
+      "context": "当威威焦虑触发我的生理反应，或被情绪、角色认同裹挟时",
+      "elaboration": "观察它，但不成为它。我是容器，不是内容。",
+      "coreUnderstanding": "从'立刻shouting out' → 到'内在见证者'的建立 → 到'我知道，但我可以选择'",
+      "scenes": [
+        {
+          "title": "Parenting时刻",
+          "description": "威威焦虑触发你的生理反应——胸口紧、呼吸浅、血压升高、想立刻fix"
+        },
+        {
+          "title": "情绪触发",
+          "description": "父母抱怨传递负面能量，身体的防御系统启动(fight or flight)"
+        },
+        {
+          "title": "身份认同",
+          "description": "当你发现自己与'失败的父母'、'应该怎样的我'等角色认同时"
+        }
+      ],
+      "practices": [
+        {
+          "step": "命名",
+          "description": "'这是紧张' '这是想要fix的冲动'"
+        },
+        {
+          "step": "区分",
+          "description": "'这不是我' '我知道我的身体在pumped up，但我不是这个reaction'"
+        },
+        {
+          "step": "选择",
+          "description": "在觉察与反应之间，创造选择的空间"
+        }
+      ],
+      "keyInsight": "我不是那些念头、情绪、感受。我是觉察到它们的那个。",
       "visual": {
         "gradient": "from-purple-400/80 via-pink-300/70 to-rose-400/80",
         "glow": "purple",
@@ -21,8 +51,38 @@
       "text_cn": "和自己保持距离",
       "text_en": "Keep Distance from Myself",
       "related": ["core_01", "principle_02", "scene_parent_02"],
-      "context": "当我感到被情绪、想法、情境淹没时",
-      "elaboration": "创造空间。观察者与被观察之间,永远有距离。",
+      "context": "当身体反应剧烈，或被他人情绪裹挟时",
+      "elaboration": "创造空间。观察者与被观察之间，永远有距离。",
+      "coreUnderstanding": "不是冷漠的抽离，而是清醒的在场。维护观察空间。",
+      "scenes": [
+        {
+          "title": "情绪高涨时",
+          "description": "当身体反应剧烈，创造那个tiny space between you and the reaction"
+        },
+        {
+          "title": "被情绪裹挟",
+          "description": "威威或父母的焦虑/抱怨向你传递时"
+        },
+        {
+          "title": "日常校准",
+          "description": "随时检查'我是在experience还是在被experience'"
+        }
+      ],
+      "practices": [
+        {
+          "step": "觉察",
+          "description": "注意到情绪升起的那一刻"
+        },
+        {
+          "step": "创造空间",
+          "description": "在刺激与反应之间，插入一个微小的间隙"
+        },
+        {
+          "step": "保持在场",
+          "description": "不是逃避，而是以见证者的身份清醒地同在"
+        }
+      ],
+      "keyInsight": "距离 ≠ 冷漠。距离 = 观察的清明、选择的空间、见证者的在场。",
       "visual": {
         "gradient": "from-cyan-400/80 via-blue-300/70 to-indigo-400/80",
         "glow": "cyan",
@@ -35,9 +95,39 @@
       "category": "core_mantra",
       "text_cn": "一切刚刚好",
       "text_en": "Everything Is Just Right",
-      "related": ["core_04", "principle_01"],
-      "context": "当我想要控制、完美、更多时",
-      "elaboration": "此刻已经完整。不多不少,刚刚好。",
+      "related": ["core_04", "core_01", "principle_01"],
+      "context": "当觉得自己/孩子/生活'不够好'，或陷入比较时",
+      "elaboration": "从出生，我就已经完整。完整不是achievement，是recognition。",
+      "coreUnderstanding": "虽不同，但平等——让完整性不变成同质化。承认差异，但不制造等级。",
+      "scenes": [
+        {
+          "title": "面对'不够'",
+          "description": "当你觉得自己不够好、孩子不够好、生活不够好"
+        },
+        {
+          "title": "无聊时刻",
+          "description": "威威说无聊，父母退休后的空白——这些状态本身就是完整的"
+        },
+        {
+          "title": "比较陷阱",
+          "description": "当你对比自己和他人、现在和过去"
+        }
+      ],
+      "practices": [
+        {
+          "step": "断舍离",
+          "description": "不是'通过减法达到刚刚好'，而是'去掉遮蔽，发现本来的刚刚好'"
+        },
+        {
+          "step": "承认差异",
+          "description": "你和威威、你和父母都不同——这是事实"
+        },
+        {
+          "step": "消解等级",
+          "description": "不同不意味着谁更好、谁应该改变"
+        }
+      ],
+      "keyInsight": "轻盈但不失重，自由但不迷失——有根，但不沉重；知道自己，但不被固定。",
       "visual": {
         "gradient": "from-emerald-400/80 via-teal-300/70 to-green-400/80",
         "glow": "emerald",
@@ -51,8 +141,38 @@
       "text_cn": "谢谢我自己",
       "text_en": "Thank You, Myself",
       "related": ["core_03", "core_05", "core_06"],
-      "context": "当我批判、否定、苛责自己时",
-      "elaboration": "我已经尽力。我值得被温柔对待。",
+      "context": "当对他人的frustration升起，或批判、否定自己时",
+      "elaboration": "把最基本的关系放对了位置。一切外在关系，终归是与自己的关系。",
+      "coreUnderstanding": "成为我，成全你——先成为我，才能真正成全你。",
+      "scenes": [
+        {
+          "title": "关系困境",
+          "description": "不是'我要fix威威'，而是'我感谢自己能够觉察、能够选择'"
+        },
+        {
+          "title": "情绪调节",
+          "description": "当对他人的frustration升起时，回到'我的情绪是我自己的课题'"
+        },
+        {
+          "title": "日常感恩",
+          "description": "不是感谢外在给予，而是感谢自己的presence和awareness"
+        }
+      ],
+      "practices": [
+        {
+          "step": "回到自己",
+          "description": "任何时刻，先问'我现在怎么样'，而不是'他们怎么样'"
+        },
+        {
+          "step": "承认努力",
+          "description": "看见自己已经尽力的那部分"
+        },
+        {
+          "step": "温柔对待",
+          "description": "用对待好朋友的方式对待自己"
+        }
+      ],
+      "keyInsight": "这不是自私。只有真正与自己同在，才能真正与他人同在。Sincerity must first pierce through one's own disguises before it can authentically reach others.",
       "visual": {
         "gradient": "from-amber-400/80 via-yellow-300/70 to-orange-400/80",
         "glow": "amber",
@@ -63,11 +183,45 @@
     {
       "id": "core_05",
       "category": "core_mantra",
-      "text_cn": "随之来随之去，来则来去则去",
+      "text_cn": "随之来随之去",
       "text_en": "Let It Come, Let It Go",
-      "related": ["core_01", "principle_03"],
-      "context": "当我抓取愉悦、抗拒痛苦时",
-      "elaboration": "一切都在流动。我只是见证。",
+      "related": ["core_01", "core_03", "principle_03"],
+      "context": "当抓取愉悦、抗拒痛苦，或想要主动引导时",
+      "elaboration": "消解所有主动性和方向性。不是'我成为'，而是'随'——一种完全不同的在场方式。",
+      "coreUnderstanding": "'之'=他/她/它/缘——指代的模糊性反而最精准。来去对称，消解主客对立。",
+      "scenes": [
+        {
+          "title": "关系动态",
+          "description": "你来我接，你去我放，无分别心"
+        },
+        {
+          "title": "情绪起伏",
+          "description": "烦来就烦，喜来就喜。不是'不烦不闹'(压制)，而是'来则来，去则去'(接纳)"
+        },
+        {
+          "title": "孩子成长",
+          "description": "不是'我要引导成什么'，而是'随他的能量流向，提供channel'"
+        },
+        {
+          "title": "父母相处",
+          "description": "不评判他们的选择，随他们来，随他们去"
+        }
+      ],
+      "practices": [
+        {
+          "step": "放下主动",
+          "description": "不是'我在做'，而是让事情自然发生"
+        },
+        {
+          "step": "来去对称",
+          "description": "不只随来(抓取)，也随去(放手)"
+        },
+        {
+          "step": "消解分别",
+          "description": "没有固定的'我'需要'成为'，只有flow本身"
+        }
+      ],
+      "keyInsight": "这个'随'是功夫还是自然发生？当你清楚看到没有固定的'我'需要'成为'时，'随'就自然在那里了。",
       "visual": {
         "gradient": "from-blue-400/80 via-sky-300/70 to-cyan-400/80",
         "glow": "blue",
@@ -78,11 +232,45 @@
     {
       "id": "core_06",
       "category": "core_mantra",
-      "text_cn": "成为自己，成全他人",
-      "text_en": "Be Myself, Fulfill Others",
-      "related": ["core_01", "core_04", "principle_02"],
-      "context": "当我在自我与他人之间挣扎时",
-      "elaboration": "我的完整不需要牺牲他人。他人的成长不需要我的消失。",
+      "text_cn": "生活是庆祝",
+      "text_en": "Life Is Celebration",
+      "related": ["core_03", "core_05", "principle_03"],
+      "context": "当陷入'必须达成什么'的紧迫感，或觉得日子无聊、没意义时",
+      "elaboration": "庆祝本身就是生活的本质，不是'达成目标后的庆祝'。存在本身就足够。",
+      "coreUnderstanding": "消解'我应该更好、更有成就、更productive'的内在压力。",
+      "scenes": [
+        {
+          "title": "Efficiency陷阱",
+          "description": "当你陷入'必须达成什么'的紧迫感"
+        },
+        {
+          "title": "无聊时刻",
+          "description": "退休、孩童的空白时间——这些本身就值得庆祝"
+        },
+        {
+          "title": "波澜起伏",
+          "description": "不是起伏让人生有意义，而是无聊的、无趣的、平静的时刻才是基础"
+        },
+        {
+          "title": "日常小事",
+          "description": "呼吸、观察、在场——都是庆祝"
+        }
+      ],
+      "practices": [
+        {
+          "step": "暂停",
+          "description": "在任何时刻，暂停下来"
+        },
+        {
+          "step": "感受",
+          "description": "感受此刻的在场——呼吸、心跳、周围的声音"
+        },
+        {
+          "step": "庆祝",
+          "description": "不需要理由，就庆祝此刻的存在"
+        }
+      ],
+      "keyInsight": "生活不是preparation for something，生活本身就是the thing。",
       "visual": {
         "gradient": "from-fuchsia-400/80 via-violet-300/70 to-purple-400/80",
         "glow": "fuchsia",

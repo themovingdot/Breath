@@ -5,6 +5,16 @@ export interface VisualStyle {
   backgroundColor?: string;
 }
 
+export interface SceneExample {
+  title: string;
+  description: string;
+}
+
+export interface PracticeMethod {
+  step: string;
+  description: string;
+}
+
 export interface BreathReminder {
   id: string;
   category: 'core_mantra' | 'principle' | 'parenting' | 'theory' | 'daily';
@@ -14,6 +24,11 @@ export interface BreathReminder {
   context: string;
   elaboration: string;
   visual?: VisualStyle;
+  // 扩展字段
+  coreUnderstanding?: string;
+  scenes?: SceneExample[];
+  practices?: PracticeMethod[];
+  keyInsight?: string;
 }
 
 export interface ContentData {
