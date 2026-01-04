@@ -150,6 +150,8 @@ export default function Home() {
       {/* 主咒语 */}
       <div className={`
         flex items-center justify-center mb-8
+        px-8 md:px-12 lg:px-16
+        w-full
         transition-opacity duration-600 ease-in-out
         ${isFading ? 'opacity-0' : 'opacity-100'}
       `}>
