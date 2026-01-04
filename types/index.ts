@@ -5,14 +5,19 @@ export interface VisualStyle {
   backgroundColor?: string;
 }
 
+export interface BilingualText {
+  cn: string;
+  en: string;
+}
+
 export interface SceneExample {
-  title: string;
-  description: string;
+  title: BilingualText;
+  description: BilingualText;
 }
 
 export interface PracticeMethod {
-  step: string;
-  description: string;
+  step: BilingualText;
+  description: BilingualText;
 }
 
 export interface BreathReminder {
@@ -21,14 +26,14 @@ export interface BreathReminder {
   text_cn: string;
   text_en: string;
   related: string[];
-  context: string;
-  elaboration: string;
+  context: BilingualText;
+  elaboration: BilingualText;
   visual?: VisualStyle;
   // 扩展字段
-  coreUnderstanding?: string;
+  coreUnderstanding?: BilingualText;
   scenes?: SceneExample[];
   practices?: PracticeMethod[];
-  keyInsight?: string;
+  keyInsight?: BilingualText;
 }
 
 export interface ContentData {

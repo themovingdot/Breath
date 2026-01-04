@@ -77,7 +77,7 @@ export default function MantraDetail({
         {reminder.coreUnderstanding && (
           <div className="max-w-3xl mb-12 text-center">
             <div className="text-lg md:text-xl text-gray-300 font-light leading-relaxed italic">
-              {reminder.coreUnderstanding}
+              {reminder.coreUnderstanding[language]}
             </div>
           </div>
         )}
@@ -93,7 +93,7 @@ export default function MantraDetail({
               {language === 'cn' ? '使用时机' : 'When to Use'}
             </div>
             <div className="text-xl md:text-2xl text-gray-200 font-light leading-relaxed text-center px-4">
-              {reminder.context}
+              {reminder.context[language]}
             </div>
           </div>
 
@@ -125,10 +125,10 @@ export default function MantraDetail({
                       className="text-sm font-medium mb-2"
                       style={{ color: accentColor }}
                     >
-                      {scene.title}
+                      {scene.title[language]}
                     </div>
                     <div className="text-gray-400 text-sm leading-relaxed">
-                      {scene.description}
+                      {scene.description[language]}
                     </div>
                   </div>
                 ))}
@@ -168,10 +168,10 @@ export default function MantraDetail({
                     </div>
                     <div className="flex-1">
                       <div className="text-gray-200 font-medium mb-1">
-                        {practice.step}
+                        {practice.step[language]}
                       </div>
                       <div className="text-gray-400 text-sm leading-relaxed">
-                        {practice.description}
+                        {practice.description[language]}
                       </div>
                     </div>
                   </div>
@@ -195,7 +195,7 @@ export default function MantraDetail({
               {language === 'cn' ? '深入理解' : 'Understanding'}
             </div>
             <div className="text-lg md:text-xl text-gray-300 font-light leading-relaxed text-center px-4">
-              {reminder.elaboration}
+              {reminder.elaboration[language]}
             </div>
           </div>
 
@@ -220,7 +220,7 @@ export default function MantraDetail({
                     backgroundColor: `${accentColor}05`,
                   }}
                 >
-                  {reminder.keyInsight}
+                  {reminder.keyInsight[language]}
                 </div>
               </div>
             </>

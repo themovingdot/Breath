@@ -6,38 +6,86 @@
       "text_cn": "那都不是我",
       "text_en": "None of That Is Me",
       "related": ["core_02", "principle_01", "scene_parent_01"],
-      "context": "当威威焦虑触发我的生理反应，或被情绪、角色认同裹挟时",
-      "elaboration": "观察它，但不成为它。我是容器，不是内容。",
-      "coreUnderstanding": "从'立刻shouting out' → 到'内在见证者'的建立 → 到'我知道，但我可以选择'",
+      "context": {
+        "cn": "当威威焦虑触发我的生理反应，或被情绪、角色认同裹挟时",
+        "en": "When Weiwei's anxiety triggers my physiological reactions, or when swept up by emotions and role identification"
+      },
+      "elaboration": {
+        "cn": "观察它，但不成为它。我是容器，不是内容。",
+        "en": "Observe it, but don't become it. I am the container, not the content."
+      },
+      "coreUnderstanding": {
+        "cn": "从'立刻shouting out' → 到'内在见证者'的建立 → 到'我知道，但我可以选择'",
+        "en": "From 'immediate shouting out' → to establishing the 'inner witness' → to 'I know, but I can choose'"
+      },
       "scenes": [
         {
-          "title": "Parenting时刻",
-          "description": "威威焦虑触发你的生理反应——胸口紧、呼吸浅、血压升高、想立刻fix"
+          "title": {
+            "cn": "Parenting时刻",
+            "en": "Parenting Moments"
+          },
+          "description": {
+            "cn": "威威焦虑触发你的生理反应——胸口紧、呼吸浅、血压升高、想立刻fix",
+            "en": "Weiwei's anxiety triggers your physiological response—chest tightness, shallow breathing, rising blood pressure, urge to fix immediately"
+          }
         },
         {
-          "title": "情绪触发",
-          "description": "父母抱怨传递负面能量，身体的防御系统启动(fight or flight)"
+          "title": {
+            "cn": "情绪触发",
+            "en": "Emotional Triggers"
+          },
+          "description": {
+            "cn": "父母抱怨传递负面能量，身体的防御系统启动(fight or flight)",
+            "en": "Parents' complaints transmit negative energy, your body's defense system activates (fight or flight)"
+          }
         },
         {
-          "title": "身份认同",
-          "description": "当你发现自己与'失败的父母'、'应该怎样的我'等角色认同时"
+          "title": {
+            "cn": "身份认同",
+            "en": "Identity Attachment"
+          },
+          "description": {
+            "cn": "当你发现自己与'失败的父母'、'应该怎样的我'等角色认同时",
+            "en": "When you find yourself identified with roles like 'failed parent' or 'who I should be'"
+          }
         }
       ],
       "practices": [
         {
-          "step": "命名",
-          "description": "'这是紧张' '这是想要fix的冲动'"
+          "step": {
+            "cn": "命名",
+            "en": "Name It"
+          },
+          "description": {
+            "cn": "'这是紧张' '这是想要fix的冲动'",
+            "en": "'This is tension' 'This is the urge to fix'"
+          }
         },
         {
-          "step": "区分",
-          "description": "'这不是我' '我知道我的身体在pumped up，但我不是这个reaction'"
+          "step": {
+            "cn": "区分",
+            "en": "Distinguish"
+          },
+          "description": {
+            "cn": "'这不是我' '我知道我的身体在pumped up，但我不是这个reaction'",
+            "en": "'This is not me' 'I know my body is pumped up, but I am not this reaction'"
+          }
         },
         {
-          "step": "选择",
-          "description": "在觉察与反应之间，创造选择的空间"
+          "step": {
+            "cn": "选择",
+            "en": "Choose"
+          },
+          "description": {
+            "cn": "在觉察与反应之间，创造选择的空间",
+            "en": "Between awareness and reaction, create a space for choice"
+          }
         }
       ],
-      "keyInsight": "我不是那些念头、情绪、感受。我是觉察到它们的那个。",
+      "keyInsight": {
+        "cn": "我不是那些念头、情绪、感受。我是觉察到它们的那个。",
+        "en": "I am not those thoughts, emotions, or sensations. I am the one who is aware of them."
+      },
       "visual": {
         "gradient": "from-purple-400/80 via-pink-300/70 to-rose-400/80",
         "glow": "purple",
@@ -51,38 +99,86 @@
       "text_cn": "和自己保持距离",
       "text_en": "Keep Distance from Myself",
       "related": ["core_01", "principle_02", "scene_parent_02"],
-      "context": "当身体反应剧烈，或被他人情绪裹挟时",
-      "elaboration": "创造空间。观察者与被观察之间，永远有距离。",
-      "coreUnderstanding": "不是冷漠的抽离，而是清醒的在场。维护观察空间。",
+      "context": {
+        "cn": "当身体反应剧烈，或被他人情绪裹挟时",
+        "en": "When body reactions are intense, or when swept up by others' emotions"
+      },
+      "elaboration": {
+        "cn": "创造空间。观察者与被观察之间，永远有距离。",
+        "en": "Create space. There's always distance between the observer and the observed."
+      },
+      "coreUnderstanding": {
+        "cn": "不是冷漠的抽离，而是清醒的在场。维护观察空间。",
+        "en": "Not detached indifference, but lucid presence. Maintain the space of observation."
+      },
       "scenes": [
         {
-          "title": "情绪高涨时",
-          "description": "当身体反应剧烈，创造那个tiny space between you and the reaction"
+          "title": {
+            "cn": "情绪高涨时",
+            "en": "High Emotions"
+          },
+          "description": {
+            "cn": "当身体反应剧烈，创造那个tiny space between you and the reaction",
+            "en": "When body reactions are intense, create that tiny space between you and the reaction"
+          }
         },
         {
-          "title": "被情绪裹挟",
-          "description": "威威或父母的焦虑/抱怨向你传递时"
+          "title": {
+            "cn": "被情绪裹挟",
+            "en": "Emotional Entanglement"
+          },
+          "description": {
+            "cn": "威威或父母的焦虑/抱怨向你传递时",
+            "en": "When Weiwei's or parents' anxiety/complaints are transmitted to you"
+          }
         },
         {
-          "title": "日常校准",
-          "description": "随时检查'我是在experience还是在被experience'"
+          "title": {
+            "cn": "日常校准",
+            "en": "Daily Calibration"
+          },
+          "description": {
+            "cn": "随时检查'我是在experience还是在被experience'",
+            "en": "Constantly check: 'Am I experiencing or being experienced?'"
+          }
         }
       ],
       "practices": [
         {
-          "step": "觉察",
-          "description": "注意到情绪升起的那一刻"
+          "step": {
+            "cn": "觉察",
+            "en": "Awareness"
+          },
+          "description": {
+            "cn": "注意到情绪升起的那一刻",
+            "en": "Notice the moment when emotion arises"
+          }
         },
         {
-          "step": "创造空间",
-          "description": "在刺激与反应之间，插入一个微小的间隙"
+          "step": {
+            "cn": "创造空间",
+            "en": "Create Space"
+          },
+          "description": {
+            "cn": "在刺激与反应之间，插入一个微小的间隙",
+            "en": "Between stimulus and response, insert a tiny gap"
+          }
         },
         {
-          "step": "保持在场",
-          "description": "不是逃避，而是以见证者的身份清醒地同在"
+          "step": {
+            "cn": "保持在场",
+            "en": "Stay Present"
+          },
+          "description": {
+            "cn": "不是逃避，而是以见证者的身份清醒地同在",
+            "en": "Not escape, but lucid presence as the witness"
+          }
         }
       ],
-      "keyInsight": "距离 ≠ 冷漠。距离 = 观察的清明、选择的空间、见证者的在场。",
+      "keyInsight": {
+        "cn": "距离 ≠ 冷漠。距离 = 观察的清明、选择的空间、见证者的在场。",
+        "en": "Distance ≠ indifference. Distance = clarity of observation, space for choice, presence of the witness."
+      },
       "visual": {
         "gradient": "from-cyan-400/80 via-blue-300/70 to-indigo-400/80",
         "glow": "cyan",
@@ -96,38 +192,86 @@
       "text_cn": "一切刚刚好",
       "text_en": "Everything Is Just Right",
       "related": ["core_04", "core_01", "principle_01"],
-      "context": "当觉得自己/孩子/生活'不够好'，或陷入比较时",
-      "elaboration": "从出生，我就已经完整。完整不是achievement，是recognition。",
-      "coreUnderstanding": "虽不同，但平等——让完整性不变成同质化。承认差异，但不制造等级。",
+      "context": {
+        "cn": "当觉得自己/孩子/生活'不够好'，或陷入比较时",
+        "en": "When feeling that self/child/life is 'not good enough', or trapped in comparison"
+      },
+      "elaboration": {
+        "cn": "从出生，我就已经完整。完整不是achievement，是recognition。",
+        "en": "From birth, I am already whole. Wholeness is not achievement, but recognition."
+      },
+      "coreUnderstanding": {
+        "cn": "虽不同，但平等——让完整性不变成同质化。承认差异，但不制造等级。",
+        "en": "Different, yet equal—let wholeness not become homogenization. Acknowledge differences without creating hierarchies."
+      },
       "scenes": [
         {
-          "title": "面对'不够'",
-          "description": "当你觉得自己不够好、孩子不够好、生活不够好"
+          "title": {
+            "cn": "面对'不够'",
+            "en": "Facing 'Not Enough'"
+          },
+          "description": {
+            "cn": "当你觉得自己不够好、孩子不够好、生活不够好",
+            "en": "When you feel you're not good enough, your child isn't good enough, life isn't good enough"
+          }
         },
         {
-          "title": "无聊时刻",
-          "description": "威威说无聊，父母退休后的空白——这些状态本身就是完整的"
+          "title": {
+            "cn": "无聊时刻",
+            "en": "Boring Moments"
+          },
+          "description": {
+            "cn": "威威说无聊，父母退休后的空白——这些状态本身就是完整的",
+            "en": "Weiwei says bored, parents' post-retirement emptiness—these states themselves are complete"
+          }
         },
         {
-          "title": "比较陷阱",
-          "description": "当你对比自己和他人、现在和过去"
+          "title": {
+            "cn": "比较陷阱",
+            "en": "Comparison Trap"
+          },
+          "description": {
+            "cn": "当你对比自己和他人、现在和过去",
+            "en": "When you compare yourself to others, present to past"
+          }
         }
       ],
       "practices": [
         {
-          "step": "断舍离",
-          "description": "不是'通过减法达到刚刚好'，而是'去掉遮蔽，发现本来的刚刚好'"
+          "step": {
+            "cn": "断舍离",
+            "en": "Let Go"
+          },
+          "description": {
+            "cn": "不是'通过减法达到刚刚好'，而是'去掉遮蔽，发现本来的刚刚好'",
+            "en": "Not 'achieving just right through subtraction', but 'removing veils to discover the inherent just right'"
+          }
         },
         {
-          "step": "承认差异",
-          "description": "你和威威、你和父母都不同——这是事实"
+          "step": {
+            "cn": "承认差异",
+            "en": "Acknowledge Differences"
+          },
+          "description": {
+            "cn": "你和威威、你和父母都不同——这是事实",
+            "en": "You and Weiwei, you and your parents are different—this is fact"
+          }
         },
         {
-          "step": "消解等级",
-          "description": "不同不意味着谁更好、谁应该改变"
+          "step": {
+            "cn": "消解等级",
+            "en": "Dissolve Hierarchy"
+          },
+          "description": {
+            "cn": "不同不意味着谁更好、谁应该改变",
+            "en": "Different doesn't mean who's better, who should change"
+          }
         }
       ],
-      "keyInsight": "轻盈但不失重，自由但不迷失——有根，但不沉重；知道自己，但不被固定。",
+      "keyInsight": {
+        "cn": "轻盈但不失重，自由但不迷失——有根，但不沉重；知道自己，但不被固定。",
+        "en": "Light yet not weightless, free yet not lost—rooted but not heavy; knowing self yet not fixed."
+      },
       "visual": {
         "gradient": "from-emerald-400/80 via-teal-300/70 to-green-400/80",
         "glow": "emerald",
@@ -141,38 +285,86 @@
       "text_cn": "谢谢我自己",
       "text_en": "Thank You, Myself",
       "related": ["core_03", "core_05", "core_06"],
-      "context": "当对他人的frustration升起，或批判、否定自己时",
-      "elaboration": "把最基本的关系放对了位置。一切外在关系，终归是与自己的关系。",
-      "coreUnderstanding": "成为我，成全你——先成为我，才能真正成全你。",
+      "context": {
+        "cn": "当对他人的frustration升起，或批判、否定自己时",
+        "en": "When frustration with others arises, or when criticizing and negating yourself"
+      },
+      "elaboration": {
+        "cn": "把最基本的关系放对了位置。一切外在关系，终归是与自己的关系。",
+        "en": "Put the most fundamental relationship in its right place. All external relationships ultimately are relationships with self."
+      },
+      "coreUnderstanding": {
+        "cn": "成为我，成全你——先成为我，才能真正成全你。",
+        "en": "Become me, fulfill you—first become myself, then truly fulfill you."
+      },
       "scenes": [
         {
-          "title": "关系困境",
-          "description": "不是'我要fix威威'，而是'我感谢自己能够觉察、能够选择'"
+          "title": {
+            "cn": "关系困境",
+            "en": "Relationship Struggles"
+          },
+          "description": {
+            "cn": "不是'我要fix威威'，而是'我感谢自己能够觉察、能够选择'",
+            "en": "Not 'I must fix Weiwei', but 'I thank myself for being able to be aware, to choose'"
+          }
         },
         {
-          "title": "情绪调节",
-          "description": "当对他人的frustration升起时，回到'我的情绪是我自己的课题'"
+          "title": {
+            "cn": "情绪调节",
+            "en": "Emotional Regulation"
+          },
+          "description": {
+            "cn": "当对他人的frustration升起时，回到'我的情绪是我自己的课题'",
+            "en": "When frustration with others arises, return to 'my emotions are my own task'"
+          }
         },
         {
-          "title": "日常感恩",
-          "description": "不是感谢外在给予，而是感谢自己的presence和awareness"
+          "title": {
+            "cn": "日常感恩",
+            "en": "Daily Gratitude"
+          },
+          "description": {
+            "cn": "不是感谢外在给予，而是感谢自己的presence和awareness",
+            "en": "Not thanking external gifts, but thanking your own presence and awareness"
+          }
         }
       ],
       "practices": [
         {
-          "step": "回到自己",
-          "description": "任何时刻，先问'我现在怎么样'，而不是'他们怎么样'"
+          "step": {
+            "cn": "回到自己",
+            "en": "Return to Self"
+          },
+          "description": {
+            "cn": "任何时刻，先问'我现在怎么样'，而不是'他们怎么样'",
+            "en": "Any moment, first ask 'how am I?', not 'how are they?'"
+          }
         },
         {
-          "step": "承认努力",
-          "description": "看见自己已经尽力的那部分"
+          "step": {
+            "cn": "承认努力",
+            "en": "Acknowledge Effort"
+          },
+          "description": {
+            "cn": "看见自己已经尽力的那部分",
+            "en": "See the part where you've already done your best"
+          }
         },
         {
-          "step": "温柔对待",
-          "description": "用对待好朋友的方式对待自己"
+          "step": {
+            "cn": "温柔对待",
+            "en": "Treat Gently"
+          },
+          "description": {
+            "cn": "用对待好朋友的方式对待自己",
+            "en": "Treat yourself the way you'd treat a good friend"
+          }
         }
       ],
-      "keyInsight": "这不是自私。只有真正与自己同在，才能真正与他人同在。Sincerity must first pierce through one's own disguises before it can authentically reach others.",
+      "keyInsight": {
+        "cn": "这不是自私。只有真正与自己同在，才能真正与他人同在。Sincerity must first pierce through one's own disguises before it can authentically reach others.",
+        "en": "This is not selfishness. Only by truly being with yourself can you truly be with others. Sincerity must first pierce through one's own disguises before it can authentically reach others."
+      },
       "visual": {
         "gradient": "from-amber-400/80 via-yellow-300/70 to-orange-400/80",
         "glow": "amber",
@@ -186,42 +378,96 @@
       "text_cn": "随之来随之去",
       "text_en": "Let It Come, Let It Go",
       "related": ["core_01", "core_03", "principle_03"],
-      "context": "当抓取愉悦、抗拒痛苦，或想要主动引导时",
-      "elaboration": "消解所有主动性和方向性。不是'我成为'，而是'随'——一种完全不同的在场方式。",
-      "coreUnderstanding": "'之'=他/她/它/缘——指代的模糊性反而最精准。来去对称，消解主客对立。",
+      "context": {
+        "cn": "当抓取愉悦、抗拒痛苦，或想要主动引导时",
+        "en": "When grasping at pleasure, resisting pain, or wanting to actively guide"
+      },
+      "elaboration": {
+        "cn": "消解所有主动性和方向性。不是'我成为'，而是'随'——一种完全不同的在场方式。",
+        "en": "Dissolve all agency and directionality. Not 'I become', but 'follow'—a completely different way of being present."
+      },
+      "coreUnderstanding": {
+        "cn": "'之'=他/她/它/缘——指代的模糊性反而最精准。来去对称，消解主客对立。",
+        "en": "'It'=he/she/it/condition—the ambiguity of reference is precisely most accurate. Coming and going are symmetrical, dissolving subject-object duality."
+      },
       "scenes": [
         {
-          "title": "关系动态",
-          "description": "你来我接，你去我放，无分别心"
+          "title": {
+            "cn": "关系动态",
+            "en": "Relationship Dynamics"
+          },
+          "description": {
+            "cn": "你来我接，你去我放，无分别心",
+            "en": "You come I receive, you go I release, without discrimination"
+          }
         },
         {
-          "title": "情绪起伏",
-          "description": "烦来就烦，喜来就喜。不是'不烦不闹'(压制)，而是'来则来，去则去'(接纳)"
+          "title": {
+            "cn": "情绪起伏",
+            "en": "Emotional Waves"
+          },
+          "description": {
+            "cn": "烦来就烦，喜来就喜。不是'不烦不闹'(压制)，而是'来则来，去则去'(接纳)",
+            "en": "Annoyance comes, be annoyed; joy comes, be joyful. Not 'don't be annoyed' (suppression), but 'let come what comes, let go what goes' (acceptance)"
+          }
         },
         {
-          "title": "孩子成长",
-          "description": "不是'我要引导成什么'，而是'随他的能量流向，提供channel'"
+          "title": {
+            "cn": "孩子成长",
+            "en": "Child's Growth"
+          },
+          "description": {
+            "cn": "不是'我要引导成什么'，而是'随他的能量流向，提供channel'",
+            "en": "Not 'I will guide toward what', but 'follow their energy flow, provide channel'"
+          }
         },
         {
-          "title": "父母相处",
-          "description": "不评判他们的选择，随他们来，随他们去"
+          "title": {
+            "cn": "父母相处",
+            "en": "With Parents"
+          },
+          "description": {
+            "cn": "不评判他们的选择，随他们来，随他们去",
+            "en": "Don't judge their choices, let them come, let them go"
+          }
         }
       ],
       "practices": [
         {
-          "step": "放下主动",
-          "description": "不是'我在做'，而是让事情自然发生"
+          "step": {
+            "cn": "放下主动",
+            "en": "Release Agency"
+          },
+          "description": {
+            "cn": "不是'我在做'，而是让事情自然发生",
+            "en": "Not 'I am doing', but letting things happen naturally"
+          }
         },
         {
-          "step": "来去对称",
-          "description": "不只随来(抓取)，也随去(放手)"
+          "step": {
+            "cn": "来去对称",
+            "en": "Symmetry of Coming-Going"
+          },
+          "description": {
+            "cn": "不只随来(抓取)，也随去(放手)",
+            "en": "Not just follow coming (grasping), also follow going (releasing)"
+          }
         },
         {
-          "step": "消解分别",
-          "description": "没有固定的'我'需要'成为'，只有flow本身"
+          "step": {
+            "cn": "消解分别",
+            "en": "Dissolve Discrimination"
+          },
+          "description": {
+            "cn": "没有固定的'我'需要'成为'，只有flow本身",
+            "en": "No fixed 'I' needing to 'become', only flow itself"
+          }
         }
       ],
-      "keyInsight": "这个'随'是功夫还是自然发生？当你清楚看到没有固定的'我'需要'成为'时，'随'就自然在那里了。",
+      "keyInsight": {
+        "cn": "这个'随'是功夫还是自然发生？当你清楚看到没有固定的'我'需要'成为'时，'随'就自然在那里了。",
+        "en": "Is this 'following' a practice or natural occurrence? When you clearly see there's no fixed 'I' needing to 'become', 'following' is naturally there."
+      },
       "visual": {
         "gradient": "from-blue-400/80 via-sky-300/70 to-cyan-400/80",
         "glow": "blue",
@@ -235,42 +481,96 @@
       "text_cn": "生活是庆祝",
       "text_en": "Life Is Celebration",
       "related": ["core_03", "core_05", "principle_03"],
-      "context": "当陷入'必须达成什么'的紧迫感，或觉得日子无聊、没意义时",
-      "elaboration": "庆祝本身就是生活的本质，不是'达成目标后的庆祝'。存在本身就足够。",
-      "coreUnderstanding": "消解'我应该更好、更有成就、更productive'的内在压力。",
+      "context": {
+        "cn": "当陷入'必须达成什么'的紧迫感，或觉得日子无聊、没意义时",
+        "en": "When trapped in the urgency of 'must achieve something', or feeling life is boring and meaningless"
+      },
+      "elaboration": {
+        "cn": "庆祝本身就是生活的本质，不是'达成目标后的庆祝'。存在本身就足够。",
+        "en": "Celebration itself is the essence of life, not 'celebration after achieving goals'. Existence itself is enough."
+      },
+      "coreUnderstanding": {
+        "cn": "消解'我应该更好、更有成就、更productive'的内在压力。",
+        "en": "Dissolve the internal pressure of 'I should be better, more accomplished, more productive'."
+      },
       "scenes": [
         {
-          "title": "Efficiency陷阱",
-          "description": "当你陷入'必须达成什么'的紧迫感"
+          "title": {
+            "cn": "Efficiency陷阱",
+            "en": "Efficiency Trap"
+          },
+          "description": {
+            "cn": "当你陷入'必须达成什么'的紧迫感",
+            "en": "When you fall into the urgency of 'must achieve something'"
+          }
         },
         {
-          "title": "无聊时刻",
-          "description": "退休、孩童的空白时间——这些本身就值得庆祝"
+          "title": {
+            "cn": "无聊时刻",
+            "en": "Boring Moments"
+          },
+          "description": {
+            "cn": "退休、孩童的空白时间——这些本身就值得庆祝",
+            "en": "Retirement, children's empty time—these themselves are worth celebrating"
+          }
         },
         {
-          "title": "波澜起伏",
-          "description": "不是起伏让人生有意义，而是无聊的、无趣的、平静的时刻才是基础"
+          "title": {
+            "cn": "波澜起伏",
+            "en": "Ups and Downs"
+          },
+          "description": {
+            "cn": "不是起伏让人生有意义，而是无聊的、无趣的、平静的时刻才是基础",
+            "en": "Not the ups and downs that give life meaning, but the boring, mundane, calm moments are the foundation"
+          }
         },
         {
-          "title": "日常小事",
-          "description": "呼吸、观察、在场——都是庆祝"
+          "title": {
+            "cn": "日常小事",
+            "en": "Daily Trivia"
+          },
+          "description": {
+            "cn": "呼吸、观察、在场——都是庆祝",
+            "en": "Breathing, observing, being present—all are celebration"
+          }
         }
       ],
       "practices": [
         {
-          "step": "暂停",
-          "description": "在任何时刻，暂停下来"
+          "step": {
+            "cn": "暂停",
+            "en": "Pause"
+          },
+          "description": {
+            "cn": "在任何时刻，暂停下来",
+            "en": "At any moment, pause"
+          }
         },
         {
-          "step": "感受",
-          "description": "感受此刻的在场——呼吸、心跳、周围的声音"
+          "step": {
+            "cn": "感受",
+            "en": "Feel"
+          },
+          "description": {
+            "cn": "感受此刻的在场——呼吸、心跳、周围的声音",
+            "en": "Feel the presence of this moment—breath, heartbeat, surrounding sounds"
+          }
         },
         {
-          "step": "庆祝",
-          "description": "不需要理由，就庆祝此刻的存在"
+          "step": {
+            "cn": "庆祝",
+            "en": "Celebrate"
+          },
+          "description": {
+            "cn": "不需要理由，就庆祝此刻的存在",
+            "en": "Without needing a reason, celebrate this moment's existence"
+          }
         }
       ],
-      "keyInsight": "生活不是preparation for something，生活本身就是the thing。",
+      "keyInsight": {
+        "cn": "生活不是preparation for something，生活本身就是the thing。",
+        "en": "Life is not preparation for something, life itself is the thing."
+      },
       "visual": {
         "gradient": "from-fuchsia-400/80 via-violet-300/70 to-purple-400/80",
         "glow": "fuchsia",
@@ -284,8 +584,14 @@
       "text_cn": "清明地体验",
       "text_en": "Experience with Clarity",
       "related": ["core_01", "core_03"],
-      "context": "核心原则之一",
-      "elaboration": "不逃避,不美化,不扭曲。看见事物本来的样子。"
+      "context": {
+        "cn": "核心原则之一",
+        "en": "Core Principle One"
+      },
+      "elaboration": {
+        "cn": "不逃避,不美化,不扭曲。看见事物本来的样子。",
+        "en": "Don't escape, don't beautify, don't distort. See things as they are."
+      }
     },
     {
       "id": "principle_02",
@@ -293,8 +599,14 @@
       "text_cn": "慈悲地回应",
       "text_en": "Respond with Compassion",
       "related": ["core_02", "core_04"],
-      "context": "核心原则之二",
-      "elaboration": "对自己,对他人,对当下。温柔但不软弱。"
+      "context": {
+        "cn": "核心原则之二",
+        "en": "Core Principle Two"
+      },
+      "elaboration": {
+        "cn": "对自己,对他人,对当下。温柔但不软弱。",
+        "en": "To self, to others, to this moment. Gentle but not weak."
+      }
     },
     {
       "id": "principle_03",
@@ -302,8 +614,14 @@
       "text_cn": "自由地安住",
       "text_en": "Rest in Freedom",
       "related": ["core_05"],
-      "context": "核心原则之三",
-      "elaboration": "不被拉扯,不被绑定。在当下自由。"
+      "context": {
+        "cn": "核心原则之三",
+        "en": "Core Principle Three"
+      },
+      "elaboration": {
+        "cn": "不被拉扯,不被绑定。在当下自由。",
+        "en": "Not pulled, not bound. Free in this moment."
+      }
     },
     {
       "id": "scene_parent_01",
@@ -311,8 +629,14 @@
       "text_cn": "命名我所觉察的",
       "text_en": "Name What I'm Aware Of",
       "related": ["core_01", "principle_01"],
-      "context": "威威焦虑触发我的生理反应时",
-      "elaboration": "胸口紧。呼吸浅。想要立刻fix。这是我的模式。我可以选择。"
+      "context": {
+        "cn": "威威焦虑触发我的生理反应时",
+        "en": "When Weiwei's anxiety triggers my physiological reactions"
+      },
+      "elaboration": {
+        "cn": "胸口紧。呼吸浅。想要立刻fix。这是我的模式。我可以选择。",
+        "en": "Chest tight. Breath shallow. Urge to fix immediately. This is my pattern. I can choose."
+      }
     },
     {
       "id": "scene_parent_02",
@@ -320,8 +644,14 @@
       "text_cn": "辨识紧迫感",
       "text_en": "Identify the Urgency",
       "related": ["core_02", "principle_02"],
-      "context": "当我感到必须立刻做些什么时",
-      "elaboration": "这是真的紧急,还是我的焦虑在说话? 慢下来。"
+      "context": {
+        "cn": "当我感到必须立刻做些什么时",
+        "en": "When I feel I must do something immediately"
+      },
+      "elaboration": {
+        "cn": "这是真的紧急,还是我的焦虑在说话? 慢下来。",
+        "en": "Is this truly urgent, or is my anxiety speaking? Slow down."
+      }
     },
     {
       "id": "scene_parent_03",
@@ -329,8 +659,14 @@
       "text_cn": "我的身体在说什么",
       "text_en": "What Is My Body Saying",
       "related": ["scene_parent_01", "principle_01"],
-      "context": "在高强度互动中",
-      "elaboration": "肩膀紧绷?呼吸急促?胃部收紧? 这些是信号,不是命令。"
+      "context": {
+        "cn": "在高强度互动中",
+        "en": "In high-intensity interactions"
+      },
+      "elaboration": {
+        "cn": "肩膀紧绷?呼吸急促?胃部收紧? 这些是信号,不是命令。",
+        "en": "Shoulders tense? Breath rapid? Stomach tight? These are signals, not commands."
+      }
     },
     {
       "id": "theory_01",
@@ -338,8 +674,14 @@
       "text_cn": "欲望的悖论",
       "text_en": "The Paradox of Desire",
       "related": ["core_05", "principle_03"],
-      "context": "关于想要与放手",
-      "elaboration": "越抓取,越流失。真正的拥有,是不需要拥有。"
+      "context": {
+        "cn": "关于想要与放手",
+        "en": "About wanting and letting go"
+      },
+      "elaboration": {
+        "cn": "越抓取,越流失。真正的拥有,是不需要拥有。",
+        "en": "The more you grasp, the more it slips away. True possession is not needing to possess."
+      }
     },
     {
       "id": "theory_02",
@@ -347,8 +689,14 @@
       "text_cn": "局限即自由",
       "text_en": "Limitation as Liberation",
       "related": ["core_03"],
-      "context": "关于接受与自由",
-      "elaboration": "接受我不能改变的,释放我不需要控制的。边界创造自由。"
+      "context": {
+        "cn": "关于接受与自由",
+        "en": "About acceptance and freedom"
+      },
+      "elaboration": {
+        "cn": "接受我不能改变的,释放我不需要控制的。边界创造自由。",
+        "en": "Accept what I cannot change, release what I need not control. Boundaries create freedom."
+      }
     },
     {
       "id": "theory_03",
@@ -356,8 +704,14 @@
       "text_cn": "意识的倒置",
       "text_en": "The Inversion of Consciousness",
       "related": ["core_01", "principle_01"],
-      "context": "关于观察者与被观察",
-      "elaboration": "我不是那些念头、情绪、感受。我是觉察到它们的那个。"
+      "context": {
+        "cn": "关于观察者与被观察",
+        "en": "About observer and observed"
+      },
+      "elaboration": {
+        "cn": "我不是那些念头、情绪、感受。我是觉察到它们的那个。",
+        "en": "I am not those thoughts, emotions, sensations. I am the one who is aware of them."
+      }
     }
   ]
 }
