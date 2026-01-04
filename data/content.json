@@ -579,6 +579,119 @@
       }
     },
     {
+      "id": "core_07",
+      "category": "core_mantra",
+      "text_cn": "虽不同但平等",
+      "text_en": "Different, Yet Equal",
+      "related": ["core_03", "core_04", "principle_01"],
+      "context": {
+        "cn": "当看到差异时产生价值判断，或因不同而制造等级时",
+        "en": "When differences trigger value judgments, or when creating hierarchies based on distinctions"
+      },
+      "elaboration": {
+        "cn": "差异是事实，等级是幻象。承认不同，但不制造高低。",
+        "en": "Differences are facts, hierarchies are illusions. Acknowledge distinction without creating superiority."
+      },
+      "coreUnderstanding": {
+        "cn": "不同是中性的观察，平等是意识的立场。让多样性存在，而不转化为优劣。",
+        "en": "Difference is neutral observation, equality is the stance of consciousness. Let diversity exist without transforming it into better or worse."
+      },
+      "scenes": [
+        {
+          "title": {
+            "cn": "亲子差异",
+            "en": "Parent-Child Differences"
+          },
+          "description": {
+            "cn": "威威的性格、节奏、表达方式与你不同——这不意味着谁需要改变成谁",
+            "en": "Weiwei's personality, rhythm, and expression differ from yours—this doesn't mean who should change into whom"
+          }
+        },
+        {
+          "title": {
+            "cn": "代际鸿沟",
+            "en": "Generational Gap"
+          },
+          "description": {
+            "cn": "你和父母的价值观、生活方式、选择不同——平等地尊重，而非评判",
+            "en": "Your and your parents' values, lifestyles, choices differ—respect equally rather than judge"
+          }
+        },
+        {
+          "title": {
+            "cn": "内在冲突",
+            "en": "Internal Conflict"
+          },
+          "description": {
+            "cn": "你内在的不同部分——理性与感性、恐惧与勇气——都值得平等对待",
+            "en": "Different parts within you—reason and emotion, fear and courage—all deserve equal treatment"
+          }
+        },
+        {
+          "title": {
+            "cn": "社会比较",
+            "en": "Social Comparison"
+          },
+          "description": {
+            "cn": "当看到他人的成就、选择、生活方式与你不同时",
+            "en": "When seeing others' achievements, choices, lifestyles differ from yours"
+          }
+        }
+      ],
+      "practices": [
+        {
+          "step": {
+            "cn": "观察差异",
+            "en": "Observe Differences"
+          },
+          "description": {
+            "cn": "不回避、不否认真实存在的差异",
+            "en": "Don't avoid or deny real differences that exist"
+          }
+        },
+        {
+          "step": {
+            "cn": "停止评判",
+            "en": "Stop Judging"
+          },
+          "description": {
+            "cn": "注意到自己何时在将'不同'转化为'更好'或'更差'",
+            "en": "Notice when you're transforming 'different' into 'better' or 'worse'"
+          }
+        },
+        {
+          "step": {
+            "cn": "平等在场",
+            "en": "Equal Presence"
+          },
+          "description": {
+            "cn": "给予每个差异同等的注意和尊重",
+            "en": "Give each difference equal attention and respect"
+          }
+        },
+        {
+          "step": {
+            "cn": "消解等级",
+            "en": "Dissolve Hierarchy"
+          },
+          "description": {
+            "cn": "看到差异背后的平等本质——都是存在的不同表达",
+            "en": "See the equal essence behind differences—all are different expressions of existence"
+          }
+        }
+      ],
+      "keyInsight": {
+        "cn": "当你不再需要'相同'来感到安全，你就能真正庆祝'不同'。平等不是同质化，而是对多样性的深刻尊重。",
+        "en": "When you no longer need 'sameness' to feel safe, you can truly celebrate 'difference'. Equality is not homogenization, but profound respect for diversity."
+      },
+      "visual": {
+        "gradient": "from-rose-400/80 via-orange-300/70 to-amber-400/80",
+        "glow": "amber",
+        "size": "medium",
+        "backgroundColor": "#1f1410"
+      }
+    },
+    {
       "id": "principle_01",
       "category": "principle",
       "text_cn": "清明地体验",
