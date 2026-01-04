@@ -11,15 +11,30 @@ export function useBreathing() {
   const [showRelated, setShowRelated] = useState(false);
   const [stayDuration, setStayDuration] = useState(0);
   const [isFading, setIsFading] = useState(false);
+  const [recentHistory, setRecentHistory] = useState<string[]>([]); // Track last 2 IDs
 
-  // 选择主咒语（随机 + 时间权重）
+  // 选择主咒语（随机 + 避免重复最近2个）
   const selectMainReminder = () => {
     const reminders = contentData.breath_reminders as BreathReminder[];
     const coreReminders = reminders.filter(r => r.category === 'core_mantra');
 
-    // 简单随机选择（未来可加入时间权重）
-    const randomIndex = Math.floor(Math.random() * coreReminders.length);
-    const selected = coreReminders[randomIndex];
+    // Filter out recently shown mantras
+    const availableReminders = coreReminders.filter(
+      r => !recentHistory.includes(r.id)
+    );
+
+    // If we've filtered out too many (shouldn't happen with 7 mantras), reset
+    const candidates = availableReminders.length > 0 ? availableReminders : coreReminders;
+
+    // Random selection from available candidates
+    const randomIndex = Math.floor(Math.random() * candidates.length);
+    const selected = candidates[randomIndex];
+
+    // Update history: keep only last 2
+    setRecentHistory(prev => {
+      const newHistory = [selected.id, ...prev].slice(0, 2);
+      return newHistory;
+    });
 
     setCurrentReminder(selected);
     setRelatedReminders([]);
