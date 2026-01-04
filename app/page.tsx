@@ -122,7 +122,9 @@ export default function Home() {
   if (!currentReminder) {
     return (
       <div className={`min-h-screen flex items-center justify-center ${themeClass}`}>
-        <div className="text-2xl opacity-50">加载中...</div>
+        <div className="text-2xl opacity-50">
+          {config.language === 'cn' ? '加载中...' : 'Loading...'}
+        </div>
       </div>
     );
   }
@@ -205,13 +207,17 @@ export default function Home() {
       {/* 暂停提示 */}
       {isPaused && (
         <div className="fixed bottom-6 left-1/2 -translate-x-1/2 text-xs opacity-25">
-          已暂停 · 点击恢复
+          {config.language === 'cn' ? '已暂停 · 点击恢复' : 'Paused · Click to resume'}
         </div>
       )}
 
       {/* 提示：点击切换 */}
       <div className="fixed bottom-3 right-3 text-[10px] opacity-15 pointer-events-none">
-        {showDetail ? '向下滑动返回' : '向上滑动查看详情 · 点击切换 · 长按暂停 · ⌘M 设置'}
+        {showDetail
+          ? (config.language === 'cn' ? '向下滑动返回' : 'Swipe down to return')
+          : (config.language === 'cn'
+              ? '向上滑动查看详情 · 点击切换 · 长按暂停 · ⌘M 设置'
+              : 'Swipe up for details · Click to change · Hold to pause · ⌘M settings')}
       </div>
 
       {/* 配置菜单 */}
