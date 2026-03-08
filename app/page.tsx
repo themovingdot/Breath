@@ -137,7 +137,7 @@ export default function Home() {
         cursor-pointer
         relative
         overflow-hidden
-        transition-colors duration-1000 ease-in-out
+        transition-colors duration-[1500ms] ease-in-out
       `}
       style={{
         backgroundColor: getBackgroundColor(),
@@ -154,7 +154,7 @@ export default function Home() {
         flex items-center justify-center mb-8
         px-8 md:px-12 lg:px-16
         w-full
-        transition-opacity duration-600 ease-in-out
+        transition-opacity duration-700 ease-in-out
         ${isFading ? 'opacity-0' : 'opacity-100'}
       `}>
         <BreathingText
@@ -170,7 +170,7 @@ export default function Home() {
       {showRelated && !isFading && (
         <div className={`
           absolute inset-0 pointer-events-none
-          transition-opacity duration-600 ease-in-out
+          transition-opacity duration-700 ease-in-out
           ${isFading ? 'opacity-0' : 'opacity-100'}
         `}>
           {relatedReminders.map((reminder, index) => {
