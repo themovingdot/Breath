@@ -13,31 +13,32 @@ const config: Config = {
         'kai': ['LXGW WenKai', 'serif'],
       },
       animation: {
-        'breathe': 'breathe 8s ease-in-out infinite',
-        'breathe-delayed': 'breathe 8s ease-in-out infinite 1s',
-        'fade-in': 'fadeIn 2s ease-out forwards',
+        'breathe': 'breathe 8s cubic-bezier(0.37, 0, 0.63, 1) infinite',
+        'breathe-delayed': 'breathe 8s cubic-bezier(0.37, 0, 0.63, 1) infinite 1s',
+        'fade-in': 'fadeIn 2.5s cubic-bezier(0.4, 0, 0.2, 1) forwards',
       },
       keyframes: {
         breathe: {
           '0%, 100%': {
             transform: 'scale(1)',
-            opacity: '0.7',
+            opacity: '0.72',
           },
           '50%': {
-            transform: 'scale(1.03)',
+            transform: 'scale(1.12)',
             opacity: '1',
           },
         },
         fadeIn: {
           'from': {
             opacity: '0',
-            transform: 'translateY(10px)',
           },
           'to': {
             opacity: '0.4',
-            transform: 'translateY(0)',
           },
         },
+      },
+      transitionDuration: {
+        '600': '600ms',
       },
     },
   },
