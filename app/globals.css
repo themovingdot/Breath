@@ -40,74 +40,77 @@
   color: var(--text-blue);
 }
 
-/* 呼吸动画速度变体 */
-@keyframes breathe-slow {
+/* 呼吸动画 — 容器只做透明度呼吸 */
+@keyframes breathe-opacity {
   0%,
   100% {
-    transform: scale(1);
     opacity: 0.72;
   }
   50% {
-    transform: scale(1.12);
     opacity: 1;
   }
 }
 
-@keyframes breathe-medium {
+/* 每个字符独立缩放，幅度由 --char-scale 控制（中间大、两端小） */
+@keyframes breathe-char {
   0%,
   100% {
     transform: scale(1);
-    opacity: 0.72;
   }
   50% {
-    transform: scale(1.12);
-    opacity: 1;
-  }
-}
-
-@keyframes breathe-fast {
-  0%,
-  100% {
-    transform: scale(1);
-    opacity: 0.72;
-  }
-  50% {
-    transform: scale(1.12);
-    opacity: 1;
+    transform: scale(var(--char-scale, 1.12));
   }
 }
 
 /* Sinusoidal easing for a natural, lung-like breath rhythm */
 .breathe-slow {
-  animation: breathe-slow 12s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+  animation: breathe-opacity 12s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+}
+.breathe-slow .breathe-char-span {
+  animation: breathe-char 12s cubic-bezier(0.37, 0, 0.63, 1) infinite;
 }
 
 .breathe-medium {
-  animation: breathe-medium 8s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+  animation: breathe-opacity 8s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+}
+.breathe-medium .breathe-char-span {
+  animation: breathe-char 8s cubic-bezier(0.37, 0, 0.63, 1) infinite;
 }
 
 .breathe-fast {
-  animation: breathe-fast 5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+  animation: breathe-opacity 5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+}
+.breathe-fast .breathe-char-span {
+  animation: breathe-char 5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
 }
 
 /* 相关内容动画 - 带延迟的呼吸 */
 .breathe-delayed-slow {
-  animation: breathe-slow 12s cubic-bezier(0.37, 0, 0.63, 1) infinite;
-  animation-delay: 1.5s;
+  animation: breathe-opacity 12s cubic-bezier(0.37, 0, 0.63, 1) infinite 1.5s;
+}
+.breathe-delayed-slow .breathe-char-span {
+  animation: breathe-char 12s cubic-bezier(0.37, 0, 0.63, 1) infinite 1.5s;
 }
 
 .breathe-delayed-medium {
-  animation: breathe-medium 8s cubic-bezier(0.37, 0, 0.63, 1) infinite;
-  animation-delay: 1s;
+  animation: breathe-opacity 8s cubic-bezier(0.37, 0, 0.63, 1) infinite 1s;
+}
+.breathe-delayed-medium .breathe-char-span {
+  animation: breathe-char 8s cubic-bezier(0.37, 0, 0.63, 1) infinite 1s;
 }
 
 .breathe-delayed-fast {
-  animation: breathe-fast 5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
-  animation-delay: 0.6s;
+  animation: breathe-opacity 5s cubic-bezier(0.37, 0, 0.63, 1) infinite 0.6s;
+}
+.breathe-delayed-fast .breathe-char-span {
+  animation: breathe-char 5s cubic-bezier(0.37, 0, 0.63, 1) infinite 0.6s;
 }
 
 /* 暂停状态 */
 .paused {
+  animation-play-state: paused !important;
+}
+.paused .breathe-char-span {
   animation-play-state: paused !important;
 }
 

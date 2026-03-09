@@ -79,6 +79,19 @@ export default function BreathingText({
     };
   };
 
+  // Bell-curve scale per character: centre grows the most, edges barely move
+  const getCharScale = (index: number, total: number): number => {
+    const maxScale = isMain ? 1.12 : 1.06;
+    const minScale = 1.005;
+    if (total <= 1) return maxScale;
+    const centre = (total - 1) / 2;
+    const dist = Math.abs(index - centre) / centre; // 0 at centre, 1 at edges
+    const factor = Math.pow(Math.cos((dist * Math.PI) / 2), 2); // cos² bell curve
+    return minScale + (maxScale - minScale) * factor;
+  };
+
+  const chars = text.split('');
+
   return (
     <div
       className={`
@@ -95,7 +108,20 @@ export default function BreathingText({
       `}
       style={getGlowStyle()}
     >
-      {text}
+      {chars.map((char, i) => (
+        <span
+          key={i}
+          className="breathe-char-span"
+          style={
+            {
+              display: 'inline-block',
+              '--char-scale': getCharScale(i, chars.length),
+            } as React.CSSProperties
+          }
+        >
+          {char}
+        </span>
+      ))}
     </div>
   );
 }
