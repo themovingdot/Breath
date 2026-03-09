@@ -3,6 +3,7 @@ export interface VisualStyle {
   glow?: string;
   size?: 'small' | 'medium' | 'large';
   backgroundColor?: string;
+  breathDuration?: number; // seconds — natural breath cycle length for this mantra
 }
 
 export interface BilingualText {

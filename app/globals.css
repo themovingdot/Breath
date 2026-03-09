@@ -92,47 +92,70 @@
   }
 }
 
-.breathe-slow {
-  animation: breathe-opacity 12s linear infinite;
-}
-.breathe-slow .breathe-char-span {
-  animation: breathe-char 12s linear infinite;
-}
-
-.breathe-medium {
-  animation: breathe-opacity 8s linear infinite;
-}
-.breathe-medium .breathe-char-span {
-  animation: breathe-char 8s linear infinite;
-}
-
+/* Duration is set per-mantra via --breath-dur CSS custom property.
+   Slow/medium/fast classes only differ in their animation-delay for related content. */
+.breathe-slow,
+.breathe-medium,
 .breathe-fast {
-  animation: breathe-opacity 5s linear infinite;
+  animation-name: breathe-opacity;
+  animation-duration: var(--breath-dur, 15s);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
+
+.breathe-slow .breathe-char-span,
+.breathe-medium .breathe-char-span,
 .breathe-fast .breathe-char-span {
-  animation: breathe-char 5s linear infinite;
+  animation-name: breathe-char;
+  animation-duration: var(--breath-dur, 15s);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 /* 相关内容动画 - 带延迟的呼吸 */
 .breathe-delayed-slow {
-  animation: breathe-opacity 12s linear infinite 1.5s;
+  animation-name: breathe-opacity;
+  animation-duration: var(--breath-dur, 15s);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1.5s;
 }
 .breathe-delayed-slow .breathe-char-span {
-  animation: breathe-char 12s linear infinite 1.5s;
+  animation-name: breathe-char;
+  animation-duration: var(--breath-dur, 15s);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1.5s;
 }
 
 .breathe-delayed-medium {
-  animation: breathe-opacity 8s linear infinite 1s;
+  animation-name: breathe-opacity;
+  animation-duration: var(--breath-dur, 15s);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
 }
 .breathe-delayed-medium .breathe-char-span {
-  animation: breathe-char 8s linear infinite 1s;
+  animation-name: breathe-char;
+  animation-duration: var(--breath-dur, 15s);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
 }
 
 .breathe-delayed-fast {
-  animation: breathe-opacity 5s linear infinite 0.6s;
+  animation-name: breathe-opacity;
+  animation-duration: var(--breath-dur, 15s);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0.6s;
 }
 .breathe-delayed-fast .breathe-char-span {
-  animation: breathe-char 5s linear infinite 0.6s;
+  animation-name: breathe-char;
+  animation-duration: var(--breath-dur, 15s);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0.6s;
 }
 
 /* 暂停状态 */

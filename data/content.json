@@ -90,7 +90,8 @@
         "gradient": "from-purple-400/80 via-pink-300/70 to-rose-400/80",
         "glow": "purple",
         "size": "large",
-        "backgroundColor": "#1a0f1f"
+        "backgroundColor": "#1a0f1f",
+        "breathDuration": 14
       }
     },
     {
@@ -183,7 +184,8 @@
         "gradient": "from-cyan-400/80 via-blue-300/70 to-indigo-400/80",
         "glow": "cyan",
         "size": "medium",
-        "backgroundColor": "#0f1824"
+        "backgroundColor": "#0f1824",
+        "breathDuration": 18
       }
     },
     {
@@ -276,7 +278,8 @@
         "gradient": "from-emerald-400/80 via-teal-300/70 to-green-400/80",
         "glow": "emerald",
         "size": "small",
-        "backgroundColor": "#0f1f17"
+        "backgroundColor": "#0f1f17",
+        "breathDuration": 13
       }
     },
     {
@@ -369,7 +372,8 @@
         "gradient": "from-amber-400/80 via-yellow-300/70 to-orange-400/80",
         "glow": "amber",
         "size": "medium",
-        "backgroundColor": "#1f1a0f"
+        "backgroundColor": "#1f1a0f",
+        "breathDuration": 15
       }
     },
     {
@@ -472,7 +476,8 @@
         "gradient": "from-blue-400/80 via-sky-300/70 to-cyan-400/80",
         "glow": "blue",
         "size": "large",
-        "backgroundColor": "#0f1820"
+        "backgroundColor": "#0f1820",
+        "breathDuration": 17
       }
     },
     {
@@ -575,7 +580,8 @@
         "gradient": "from-fuchsia-400/80 via-violet-300/70 to-purple-400/80",
         "glow": "fuchsia",
         "size": "large",
-        "backgroundColor": "#1a0f24"
+        "backgroundColor": "#1a0f24",
+        "breathDuration": 16
       }
     },
     {
@@ -688,7 +694,8 @@
         "gradient": "from-rose-400/80 via-orange-300/70 to-amber-400/80",
         "glow": "amber",
         "size": "medium",
-        "backgroundColor": "#1f1410"
+        "backgroundColor": "#1f1410",
+        "breathDuration": 15
       }
     },
     {
@@ -801,7 +808,8 @@
         "gradient": "from-sky-400/80 via-indigo-300/70 to-violet-400/80",
         "glow": "blue",
         "size": "medium",
-        "backgroundColor": "#0f1420"
+        "backgroundColor": "#0f1420",
+        "breathDuration": 19
       }
     },
     {
@@ -914,7 +922,8 @@
         "gradient": "from-pink-400/80 via-rose-300/70 to-red-400/80",
         "glow": "fuchsia",
         "size": "large",
-        "backgroundColor": "#1f0f1a"
+        "backgroundColor": "#1f0f1a",
+        "breathDuration": 22
       }
     },
     {
@@ -1027,7 +1036,8 @@
         "gradient": "from-emerald-400/80 via-cyan-300/70 to-teal-400/80",
         "glow": "emerald",
         "size": "large",
-        "backgroundColor": "#0f1f1a"
+        "backgroundColor": "#0f1f1a",
+        "breathDuration": 24
       }
     },
     {
