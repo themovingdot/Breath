@@ -40,74 +40,129 @@
   color: var(--text-blue);
 }
 
-/* 呼吸动画速度变体 */
-@keyframes breathe-slow {
-  0%,
-  100% {
-    transform: scale(1);
+/* 呼吸动画 — 容器只做透明度呼吸
+   4 phases (% match char animation exactly):
+   0–31%  inhale  (2.5 / 8s)
+   31–50% hold full (1.5 / 8s)
+   50–87% exhale  (3.0 / 8s)  — slightly longer than inhale
+   87–100% hold empty (1.0 / 8s)
+*/
+@keyframes breathe-opacity {
+  0% {
     opacity: 0.72;
+    animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
+  }
+  31% {
+    opacity: 1;
+    animation-timing-function: linear;
   }
   50% {
-    transform: scale(1.12);
     opacity: 1;
+    animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
   }
-}
-
-@keyframes breathe-medium {
-  0%,
+  87% {
+    opacity: 0.72;
+    animation-timing-function: linear;
+  }
   100% {
-    transform: scale(1);
     opacity: 0.72;
   }
-  50% {
-    transform: scale(1.12);
-    opacity: 1;
-  }
 }
 
-@keyframes breathe-fast {
-  0%,
+/* 每个字符独立缩放，幅度由 --char-scale 控制（中间大、两端小） */
+@keyframes breathe-char {
+  0% {
+    transform: scale(1);
+    animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
+  }
+  31% {
+    transform: scale(var(--char-scale, 1.12));
+    animation-timing-function: linear;
+  }
+  50% {
+    transform: scale(var(--char-scale, 1.12));
+    animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
+  }
+  87% {
+    transform: scale(1);
+    animation-timing-function: linear;
+  }
   100% {
     transform: scale(1);
-    opacity: 0.72;
-  }
-  50% {
-    transform: scale(1.12);
-    opacity: 1;
   }
 }
 
-/* Sinusoidal easing for a natural, lung-like breath rhythm */
-.breathe-slow {
-  animation: breathe-slow 12s cubic-bezier(0.37, 0, 0.63, 1) infinite;
-}
-
-.breathe-medium {
-  animation: breathe-medium 8s cubic-bezier(0.37, 0, 0.63, 1) infinite;
-}
-
+/* Duration is set per-mantra via --breath-dur CSS custom property.
+   Slow/medium/fast classes only differ in their animation-delay for related content. */
+.breathe-slow,
+.breathe-medium,
 .breathe-fast {
-  animation: breathe-fast 5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+  animation-name: breathe-opacity;
+  animation-duration: var(--breath-dur, 15s);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.breathe-slow .breathe-char-span,
+.breathe-medium .breathe-char-span,
+.breathe-fast .breathe-char-span {
+  animation-name: breathe-char;
+  animation-duration: var(--breath-dur, 15s);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 /* 相关内容动画 - 带延迟的呼吸 */
 .breathe-delayed-slow {
-  animation: breathe-slow 12s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+  animation-name: breathe-opacity;
+  animation-duration: var(--breath-dur, 15s);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1.5s;
+}
+.breathe-delayed-slow .breathe-char-span {
+  animation-name: breathe-char;
+  animation-duration: var(--breath-dur, 15s);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   animation-delay: 1.5s;
 }
 
 .breathe-delayed-medium {
-  animation: breathe-medium 8s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+  animation-name: breathe-opacity;
+  animation-duration: var(--breath-dur, 15s);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+.breathe-delayed-medium .breathe-char-span {
+  animation-name: breathe-char;
+  animation-duration: var(--breath-dur, 15s);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   animation-delay: 1s;
 }
 
 .breathe-delayed-fast {
-  animation: breathe-fast 5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+  animation-name: breathe-opacity;
+  animation-duration: var(--breath-dur, 15s);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0.6s;
+}
+.breathe-delayed-fast .breathe-char-span {
+  animation-name: breathe-char;
+  animation-duration: var(--breath-dur, 15s);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   animation-delay: 0.6s;
 }
 
 /* 暂停状态 */
 .paused {
+  animation-play-state: paused !important;
+}
+.paused .breathe-char-span {
   animation-play-state: paused !important;
 }
 

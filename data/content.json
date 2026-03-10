@@ -90,7 +90,8 @@
         "gradient": "from-purple-400/80 via-pink-300/70 to-rose-400/80",
         "glow": "purple",
         "size": "large",
-        "backgroundColor": "#1a0f1f"
+        "backgroundColor": "#1a0f1f",
+        "breathDuration": 14
       }
     },
     {
@@ -183,7 +184,8 @@
         "gradient": "from-cyan-400/80 via-blue-300/70 to-indigo-400/80",
         "glow": "cyan",
         "size": "medium",
-        "backgroundColor": "#0f1824"
+        "backgroundColor": "#0f1824",
+        "breathDuration": 18
       }
     },
     {
@@ -276,7 +278,8 @@
         "gradient": "from-emerald-400/80 via-teal-300/70 to-green-400/80",
         "glow": "emerald",
         "size": "small",
-        "backgroundColor": "#0f1f17"
+        "backgroundColor": "#0f1f17",
+        "breathDuration": 13
       }
     },
     {
@@ -362,14 +365,15 @@
         }
       ],
       "keyInsight": {
-        "cn": "这不是自私。只有真正与自己同在，才能真正与他人同在。Sincerity must first pierce through one's own disguises before it can authentically reach others.",
+        "cn": "这不是自私。只有真正与自己同在，才能真正与他人同在。诚意必须先穿透自己的伪装，才能真实地触达他人。",
         "en": "This is not selfishness. Only by truly being with yourself can you truly be with others. Sincerity must first pierce through one's own disguises before it can authentically reach others."
       },
       "visual": {
         "gradient": "from-amber-400/80 via-yellow-300/70 to-orange-400/80",
         "glow": "amber",
         "size": "medium",
-        "backgroundColor": "#1f1a0f"
+        "backgroundColor": "#1f1a0f",
+        "breathDuration": 15
       }
     },
     {
@@ -472,14 +476,15 @@
         "gradient": "from-blue-400/80 via-sky-300/70 to-cyan-400/80",
         "glow": "blue",
         "size": "large",
-        "backgroundColor": "#0f1820"
+        "backgroundColor": "#0f1820",
+        "breathDuration": 17
       }
     },
     {
       "id": "core_06",
       "category": "core_mantra",
       "text_cn": "生活是庆祝",
-      "text_en": "Life Is Celebration",
+      "text_en": "Life Is a Celebration",
       "related": ["core_03", "core_05", "principle_03"],
       "context": {
         "cn": "当陷入'必须达成什么'的紧迫感，或觉得日子无聊、没意义时",
@@ -575,7 +580,8 @@
         "gradient": "from-fuchsia-400/80 via-violet-300/70 to-purple-400/80",
         "glow": "fuchsia",
         "size": "large",
-        "backgroundColor": "#1a0f24"
+        "backgroundColor": "#1a0f24",
+        "breathDuration": 16
       }
     },
     {
@@ -688,7 +694,8 @@
         "gradient": "from-rose-400/80 via-orange-300/70 to-amber-400/80",
         "glow": "amber",
         "size": "medium",
-        "backgroundColor": "#1f1410"
+        "backgroundColor": "#1f1410",
+        "breathDuration": 15
       }
     },
     {
@@ -702,7 +709,7 @@
         "en": "When binding yourself or others with 'shoulds', or trapped in moral judgments"
       },
       "elaboration": {
-        "cn": "Replace 'should' with 'could'. 从命令到选择，从压力到可能性。",
+        "cn": "将"应该"替换为"可以"。从命令到选择，从压力到可能性。",
         "en": "Replace 'should' with 'could'. From command to choice, from pressure to possibility."
       },
       "coreUnderstanding": {
@@ -801,7 +808,8 @@
         "gradient": "from-sky-400/80 via-indigo-300/70 to-violet-400/80",
         "glow": "blue",
         "size": "medium",
-        "backgroundColor": "#0f1420"
+        "backgroundColor": "#0f1420",
+        "breathDuration": 19
       }
     },
     {
@@ -907,14 +915,15 @@
         }
       ],
       "keyInsight": {
-        "cn": "Paradox：当你停止'努力享受'而只是享受时，那就是最大的努力。努力的终点，是不再需要努力。",
-        "en": "Paradox: When you stop 'trying to enjoy' and just enjoy, that is the greatest effort. The end of effort is not needing to effort."
+        "cn": "悖论：当你停止"努力享受"而只是享受时，那就是最大的努力。努力的终点，是不再需要努力。",
+        "en": "Paradox: When you stop 'trying to enjoy' and just enjoy, that is the greatest effort. The end of effort is no longer needing to strive."
       },
       "visual": {
         "gradient": "from-pink-400/80 via-rose-300/70 to-red-400/80",
         "glow": "fuchsia",
         "size": "large",
-        "backgroundColor": "#1f0f1a"
+        "backgroundColor": "#1f0f1a",
+        "breathDuration": 22
       }
     },
     {
@@ -1027,7 +1036,8 @@
         "gradient": "from-emerald-400/80 via-cyan-300/70 to-teal-400/80",
         "glow": "emerald",
         "size": "large",
-        "backgroundColor": "#0f1f1a"
+        "backgroundColor": "#0f1f1a",
+        "breathDuration": 24
       }
     },
     {

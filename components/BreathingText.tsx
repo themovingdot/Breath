@@ -79,6 +79,24 @@ export default function BreathingText({
     };
   };
 
+  // Effective breath duration = mantra's natural rhythm × speed multiplier
+  const speedMultiplier: Record<BreathSpeed, number> = { slow: 1.4, medium: 1.0, fast: 0.65 };
+  const baseDuration = visual?.breathDuration ?? 15;
+  const breathDur = `${Math.round(baseDuration * speedMultiplier[breathSpeed])}s`;
+
+  // Bell-curve scale per character: centre grows the most, edges barely move
+  const getCharScale = (index: number, total: number): number => {
+    const maxScale = isMain ? 1.12 : 1.06;
+    const minScale = 1.005;
+    if (total <= 1) return maxScale;
+    const centre = (total - 1) / 2;
+    const dist = Math.abs(index - centre) / centre; // 0 at centre, 1 at edges
+    const factor = Math.pow(Math.cos((dist * Math.PI) / 2), 2); // cos² bell curve
+    return minScale + (maxScale - minScale) * factor;
+  };
+
+  const chars = text.split('');
+
   return (
     <div
       className={`
@@ -93,9 +111,22 @@ export default function BreathingText({
         tracking-wide
         font-light
       `}
-      style={getGlowStyle()}
+      style={{ ...getGlowStyle(), '--breath-dur': breathDur } as React.CSSProperties}
     >
-      {text}
+      {chars.map((char, i) => (
+        <span
+          key={i}
+          className="breathe-char-span"
+          style={
+            {
+              display: 'inline-block',
+              '--char-scale': getCharScale(i, chars.length),
+            } as React.CSSProperties
+          }
+        >
+          {char}
+        </span>
+      ))}
     </div>
   );
 }
